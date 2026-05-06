@@ -1,0 +1,29 @@
+version: 2
+
+models:
+  - name: fct_desigualdade_gestao_esforco
+    description: "Tabela fato analítica cruzando a Complexidade da Escola (ICG), Esforço Docente Crítico (IED) e o perfil sociodemográfico da gestão (Gênero e Raça)."
+    columns:
+      - name: co_entidade
+        description: "Código INEP da entidade educacional (Escola)."
+        tests:
+          - unique
+          - not_null
+          
+      - name: no_dependencia
+        description: "Dependência administrativa da escola (Ex: Estadual, Municipal, Privada)."
+        
+      - name: nivel_complexidade
+        description: "Nível de Complexidade de Gestão Escolar (ICG) da entidade."
+        
+      - name: tx_esforco_docente_critico
+        description: "Soma das porcentagens de docentes nos níveis 5 e 6 de esforço docente (representando a taxa de sobrecarga crítica da escola)."
+        
+      - name: perfil_genero
+        description: "Classificação da maioria de gênero na gestão da escola (Maioria Feminina, Maioria Masculina ou Equilibrado/Não Informado)."
+        
+      - name: prop_gestores_negros
+        description: "Proporção matemática (0.0 a 1.0) de gestores autodeclarados pretos ou pardos na liderança da escola."
+        
+      - name: perfil_raca
+        description: "Classificação categórica baseada na proporção de gestores negros. Retorna 'Gestão Maioria Negra (Preta/Parda)' se a proporção for >= 50%, caso contrário 'Gestão Maioria Branca/Outras'."

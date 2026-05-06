@@ -1,0 +1,203 @@
+version: 2
+
+models:
+  - name: stg_raw_data__icg_escolas_2025
+    description: "Staging da tabela de Indicador de Complexidade de Gestão (ICG) - 2025."
+    columns:
+      - name: nu_ano_censo
+        description: "Ano de referência do Censo Escolar."
+      - name: no_regiao
+        description: "Nome da Região geográfica da escola."
+      - name: sg_uf
+        description: "Sigla da Unidade da Federação (Estado)."
+      - name: co_municipio
+        description: "Código do Município onde a escola está localizada."
+      - name: no_municipio
+        description: "Nome do Município onde a escola está localizada."
+      - name: co_entidade
+        description: "Código INEP da entidade educacional (Escola)."
+        tests:
+          - not_null
+          - unique
+      - name: no_entidade
+        description: "Nome da entidade educacional (Escola)."
+      - name: no_categoria
+        description: "Categoria administrativa da escola (Ex: Pública, Privada)."
+      - name: no_dependencia
+        description: "Dependência administrativa da escola (Ex: Federal, Estadual, Municipal, Privada)."
+      - name: complex
+        description: "Índice de Complexidade de Gestão Escolar (ICG)."
+
+  - name: stg_raw_data__ied_escolas_2025
+    description: "Staging da tabela de Indicador de Esforço Docente (IED) - 2025."
+    columns:
+      - name: nivel_1_ed
+        description: "Porcentagem de docentes da escola alocados no nível 1 de esforço docente."
+      - name: nivel_2_ed
+        description: "Porcentagem de docentes da escola alocados no nível 2 de esforço docente."
+      - name: nivel_3_ed
+        description: "Porcentagem de docentes da escola alocados no nível 3 de esforço docente."
+      - name: nivel_4_ed
+        description: "Porcentagem de docentes da escola alocados no nível 4 de esforço docente."
+      - name: nivel_5_ed
+        description: "Porcentagem de docentes da escola alocados no nível 5 de esforço docente."
+      - name: nivel_6_ed
+        description: "Porcentagem de docentes da escola alocados no nível 6 de esforço docente."
+      - name: nu_ano_censo
+        description: "Ano de referência do Censo Escolar."
+      - name: no_regiao
+        description: "Nome da Região geográfica da escola."
+      - name: sg_uf
+        description: "Sigla da Unidade da Federação (Estado)."
+      - name: co_municipio
+        description: "Código do Município onde a escola está localizada."
+      - name: no_municipio
+        description: "Nome do Município onde a escola está localizada."
+      - name: co_entidade
+        description: "Código INEP da entidade educacional (Escola)."
+        tests:
+          - not_null
+          - unique
+      - name: no_entidade
+        description: "Nome da entidade educacional (Escola)."
+      - name: no_categoria
+        description: "Categoria administrativa da escola."
+      - name: no_dependencia
+        description: "Dependência administrativa da escola."
+
+  - name: stg_raw_data__tabela_gestor_escolar_2025
+    description: "Staging da base de Gestores Escolares contendo contagens por gênero, raça e escolaridade - 2025."
+    columns:
+      - name: nu_ano_censo
+        description: "Ano do Censo"
+      - name: co_entidade
+        description: "Código da Escola"
+        tests:
+          - not_null
+          - unique
+      - name: qt_gest_bas
+        description: "Número de Gestores Escolares da Educação Básica"
+      - name: qt_gest_bas_fem
+        description: "Número de Gestores Escolares da Educação Básica - Feminino"
+      - name: qt_gest_bas_masc
+        description: "Número de Gestores Escolares da Educação Básica - Masculino"
+      - name: qt_gest_bas_nd
+        description: "Número de Gestores Escolares da Educação Básica - Cor/Raça Não Declarada"
+      - name: qt_gest_bas_branca
+        description: "Número de Gestores Escolares da Educação Básica - Cor/Raça Branca"
+      - name: qt_gest_bas_preta
+        description: "Número de Gestores Escolares da Educação Básica - Cor/Raça Preta"
+      - name: qt_gest_bas_parda
+        description: "Número de Gestores Escolares da Educação Básica - Cor/Raça Parda"
+      - name: qt_gest_bas_amarela
+        description: "Número de Gestores Escolares da Educação Básica - Cor/Raça Amarela"
+      - name: qt_gest_bas_indigena
+        description: "Número de Gestores Escolares da Educação Básica - Cor/Raça Indígena"
+      - name: qt_gest_bas_nacio_brasileira
+        description: "Número de Gestores Escolares da Educação Básica - Nacionalidade - Brasileira"
+      - name: qt_gest_bas_nacio_estrang
+        description: "Número de Gestores Escolares da Educação Básica - Nacionalidade - Estrangeira"
+      - name: qt_gest_bas_0_24
+        description: "Número de Gestores Escolares da Educação Básica - Até 24 anos de idade na data de referência do Censo Escolar (última quarta-feira do mês de maio de 2025)"
+      - name: qt_gest_bas_25_29
+        description: "Número de Gestores Escolares da Educação Básica - Entre 25 e 29 anos de idade na data de referência do Censo Escolar (última quarta-feira do mês de maio de 2025)"
+      - name: qt_gest_bas_30_39
+        description: "Número de Gestores Escolares da Educação Básica - Entre 30 e 39 anos de idade na data de referência do Censo Escolar (última quarta-feira do mês de maio de 2025)"
+      - name: qt_gest_bas_40_49
+        description: "Número de Gestores Escolares da Educação Básica - Entre 40 e 49 anos de idade na data de referência do Censo Escolar (última quarta-feira do mês de maio de 2025)"
+      - name: qt_gest_bas_50_54
+        description: "Número de Gestores Escolares da Educação Básica - Entre 50 e 54 anos de idade na data de referência do Censo Escolar (última quarta-feira do mês de maio de 2025)"
+      - name: qt_gest_bas_55_59
+        description: "Número de Gestores Escolares da Educação Básica - Entre 55 e 59 anos de idade na data de referência do Censo Escolar (última quarta-feira do mês de maio de 2025)"
+      - name: qt_gest_bas_60_mais
+        description: "Número de Gestores Escolares da Educação Básica - Com 60 ou mais anos de idade na data de referência do Censo Escolar (última quarta-feira do mês de maio de 2025)"
+      - name: qt_gest_bas_pcd
+        description: "Número de Gestores Escolares da Educação Básica com alguma deficiência, transtorno do espectro autista (TEA) ou superdotação"
+      - name: qt_gest_bas_zr_urb
+        description: "Número de Gestores Escolares da Educação Básica - Localização/Zona de residência do Gestor Escolar - Urbana"
+      - name: qt_gest_bas_zr_rur
+        description: "Número de Gestores Escolares da Educação Básica - Localização/Zona de residência do Gestor Escolar - Rural"
+      - name: qt_gest_bas_zr_na
+        description: "Número de Gestores Escolares da Educação Básica - Localização/Zona de residência do Gestor Escolar - Não aplicável para Gestores Escolares residentes no exterior"
+      - name: qt_gest_bas_esco_ef
+        description: "Número de Gestores Escolares da Educação Básica - Maior nível de Escolaridade concluída - Ensino Fundamental"
+      - name: qt_gest_bas_esco_em
+        description: "Número de Gestores Escolares da Educação Básica - Maior nível de Escolaridade concluída - Ensino Médio"
+      - name: qt_gest_bas_esco_sup_grad
+        description: "Número de Gestores Escolares da Educação Básica - Maior nível de Escolaridade concluída - Educação Superior (Graduação)"
+      - name: qt_gest_bas_esco_sup_grad_licen
+        description: "Número de Gestores Escolares da Educação Básica - Maior nível de Escolaridade concluída - Educação Superior Licenciatura"
+      - name: qt_gest_bas_esco_sup_grad_slicen
+        description: "Número de Gestores Escolares da Educação Básica - Maior nível de Escolaridade concluída - Educação Superior Sem Licenciatura"
+      - name: qt_gest_bas_esco_sup_pos_espec
+        description: "Número de Gestores Escolares da Educação Básica - Pós-Graduação concluída - Especialização"
+      - name: qt_gest_bas_esco_sup_pos_mestra
+        description: "Número de Gestores Escolares da Educação Básica - Pós-Graduação concluída - Mestrado"
+      - name: qt_gest_bas_esco_sup_pos_douto
+        description: "Número de Gestores Escolares da Educação Básica - Pós-Graduação concluída - Doutorado"
+      - name: qt_gest_bas_esco_sup_pos_nenhum
+        description: "Número de Gestores Escolares da Educação Básica - Pós-Graduação concluída - Não tem pós-graduação concluída"
+      - name: qt_gest_bas_vinculo_concur
+        description: "Número de Gestores Escolares da Educação Básica - Situação Funcional/Regime de contratação/Tipo de Vínculo (Só é aplicável para o cargo de diretor nas escolas públicas) - Concursado/efetivo/estável"
+      - name: qt_gest_bas_vinculo_contra
+        description: "Número de Gestores Escolares da Educação Básica - Situação Funcional/Regime de contratação/Tipo de Vínculo (Só é aplicável para o cargo de diretor nas escolas públicas) - Contrato temporário"
+      - name: qt_gest_bas_vinculo_terceir
+        description: "Número de Gestores Escolares da Educação Básica - Situação Funcional/Regime de contratação/Tipo de Vínculo (Só é aplicável para o cargo de diretor nas escolas públicas) - Contrato terceirizado"
+      - name: qt_gest_bas_vinculo_clt
+        description: "Número de Gestores Escolares da Educação Básica - Situação Funcional/Regime de contratação/Tipo de Vínculo (Só é aplicável para o cargo de diretor nas escolas públicas) - Contrato CLT"
+      - name: qt_gest_bas_diretor
+        description: "Número de Gestores Escolares da Educação Básica - Cargo do gestor escolar - Diretor"
+      - name: qt_gest_bas_outro
+        description: "Número de Gestores Escolares da Educação Básica - Cargo do gestor escolar - Outro Cargo"
+      - name: qt_gest_bas_acesso_cargo_prop
+        description: "Número de Gestores Escolares da Educação Básica - Critério de acesso ao cargo/função - Ser proprietário ou sócio-proprietário da escola (exclusivo para escola privada)"
+      - name: qt_gest_bas_acesso_cargo_indic
+        description: "Número de Gestores Escolares da Educação Básica - Critério de acesso ao cargo/função - Exclusivamente por indicação/escolha da gestão"
+      - name: qt_gest_bas_acesso_cargo_sel
+        description: "Número de Gestores Escolares da Educação Básica - Critério de acesso ao cargo/função - Processo seletivo qualificado e escolha/nomeação da gestão"
+      - name: qt_gest_bas_acesso_cargo_conc
+        description: "Número de Gestores Escolares da Educação Básica - Critério de acesso ao cargo/função - Concurso público específico para o cargo de gestor escolar (exclusivo para escola pública)"
+      - name: qt_gest_bas_acesso_cargo_eleic
+        description: "Número de Gestores Escolares da Educação Básica - Critério de acesso ao cargo/função - Exclusivamente por processo eleitoral com a participação da comunidade escolar (exclusivo para escola pública)"
+      - name: qt_gest_bas_acesso_cargo_p_sel
+        description: "Número de Gestores Escolares da Educação Básica - Critério de acesso ao cargo/função - Processo seletivo qualificado e eleição com participação da comunidade escolar (exclusivo para escola pública)"
+      - name: qt_gest_bas_acesso_cargo_outro
+        description: "Número de Gestores Escolares da Educação Básica - Critério de acesso ao cargo/função - Outro"
+      - name: qt_gest_bas_espec_cre
+        description: "Número de Gestores Escolares da Educação Básica - Outros cursos - Formação Continuada com no mínimo 80 horas - Específico para creche (0 a 3 anos)"
+      - name: qt_gest_bas_espec_pre_escola
+        description: "Número de Gestores Escolares da Educação Básica - Outros cursos - Formação Continuada com no mínimo 80 horas - Específico para pré-escola (4 e 5 anos)"
+      - name: qt_gest_bas_espec_anos_iniciais
+        description: "Número de Gestores Escolares da Educação Básica - Outros cursos - Formação Continuada com no mínimo 80 horas - Específico para anos iniciais do ensino fundamental"
+      - name: qt_gest_bas_espec_anos_finais
+        description: "Número de Gestores Escolares da Educação Básica - Outros cursos - Formação Continuada com no mínimo 80 horas - Específico para anos finais do ensino fundamental"
+      - name: qt_gest_bas_espec_ens_medio
+        description: "Número de Gestores Escolares da Educação Básica - Outros cursos - Formação Continuada com no mínimo 80 horas - Específico para ensino médio"
+      - name: qt_gest_bas_espec_eja
+        description: "Número de Gestores Escolares da Educação Básica - Outros cursos - Formação Continuada com no mínimo 80 horas - Específico para educação de jovens e adultos"
+      - name: qt_gest_bas_espec_ed_especial
+        description: "Número de Gestores Escolares da Educação Básica - Outros cursos - Formação Continuada com no mínimo 80 horas - Específico para educação especial"
+      - name: qt_gest_bas_espec_bil_surdos
+        description: "Número de Gestores Escolares da Educação Básica - Outros cursos - Formação Continuada com no mínimo 80 horas - Educação bilíngue de surdos"
+      - name: qt_gest_bas_espec_ed_indigena
+        description: "Número de Gestores Escolares da Educação Básica - Outros cursos - Formação Continuada com no mínimo 80 horas - Específico para educação indígena"
+      - name: qt_gest_bas_espec_campo
+        description: "Número de Gestores Escolares da Educação Básica - Outros cursos - Formação Continuada com no mínimo 80 horas - Educação do Campo"
+      - name: qt_gest_bas_espec_ambiental
+        description: "Número de Gestores Escolares da Educação Básica - Outros cursos - Formação Continuada com no mínimo 80 horas - Educação Ambiental"
+      - name: qt_gest_bas_espec_dir_humanos
+        description: "Número de Gestores Escolares da Educação Básica - Outros cursos - Formação Continuada com no mínimo 80 horas - Educação em direitos humanos"
+      - name: qt_gest_bas_espec_div_sexual
+        description: "Número de Gestores Escolares da Educação Básica - Outros cursos - Formação Continuada com no mínimo 80 horas - Gênero e Diversidade Sexual"
+      - name: qt_gest_bas_espec_dir_adolesc
+        description: "Número de Gestores Escolares da Educação Básica - Outros cursos - Formação Continuada com no mínimo 80 horas - Direitos de criança e adolescente"
+      - name: qt_gest_bas_espec_afro
+        description: "Número de Gestores Escolares da Educação Básica - Outros cursos - Formação Continuada com no mínimo 80 horas - Educação para as relações étnico-raciais e história e cultura afro-brasileira e africana"
+      - name: qt_gest_bas_espec_gestao
+        description: "Número de Gestores Escolares da Educação Básica - Outros cursos - Formação Continuada com no mínimo 80 horas - Gestão escolar"
+      - name: qt_gest_bas_espec_educ_tic
+        description: "Número de Gestores Escolares da Educação Básica - Outros cursos - Formação Continuada com no mínimo 80 horas - Educação e Tecnologia de Informação e Comunicação (TIC)"
+      - name: qt_gest_bas_espec_outros
+        description: "Número de Gestores Escolares da Educação Básica - Outros cursos - Formação Continuada com no mínimo 80 horas - Outros"
+      - name: qt_gest_bas_espec_nenhum
+        description: "Número de Gestores Escolares da Educação Básica - Outros cursos - Formação Continuada com no mínimo 80 horas - Nenhum"

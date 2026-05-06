@@ -5,6 +5,6 @@ projeto_teste_dbt:
       type: duckdb
       # O caminho aponta para o banco criado pelo dlt no diretório raiz do exercício
       path: '../project_data.duckdb'
-      schema: dev_marts
+      schema: main
       threads: 4
 

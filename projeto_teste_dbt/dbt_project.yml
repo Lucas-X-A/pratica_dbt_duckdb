@@ -26,6 +26,6 @@ models:
     intermediate:
       +schema: intermediate
       +materialization: view
-    marts:
+    serving:
       +materialized: table
-      +schema: marts
+      +schema: serving
