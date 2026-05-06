@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: raw_data
+    schema: raw_data
+    tables:
+      - name: icg_escolas_2025
+      - name: ied_escolas_2025
+      - name: tabela_gestor_escolar_2025

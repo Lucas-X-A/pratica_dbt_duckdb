@@ -15,7 +15,6 @@ def carregar_dados_educacionais():
         dataset_name=SCHEMA_NAME
     )
 
-    # Mapeia a pasta de dados e busca todos os arquivos .csv
     caminho_pasta = Path(DATA_FOLDER)
     arquivos_csv = list(caminho_pasta.glob('*.csv'))
 
@@ -25,22 +24,21 @@ def carregar_dados_educacionais():
 
     print(f"Iniciando o processamento de {len(arquivos_csv)} arquivo(s)...\n")
 
-    # Itera sobre cada arquivo CSV encontrado na pasta
     for arquivo in arquivos_csv:
-        # Usa o nome do arquivo (sem o .csv) para nomear a tabela no DuckDB
         nome_tabela = arquivo.stem 
         
         print(f"-> Lendo {arquivo.name} e carregando na tabela '{nome_tabela}'...")
         
-        # Tenta carregar com o padrão (UTF-8 e vírgula)
         try:
-            df = pd.read_csv(arquivo)
-        except (UnicodeDecodeError, pd.errors.ParserError):
-            print(f"   Aviso: Formato padrão falhou para {arquivo.name}. Acionando fallback (sep=';', encoding='ISO-8859-1')...")
-            # Fallback em caso de falha de encoding ou separador
-            df = pd.read_csv(arquivo, sep=';', encoding='ISO-8859-1')
+            # Separador ';' definido e inferência natural ativada.
+            # low_memory=False garante que o Pandas não confunda os tipos ao ler arquivos pesados em pedaços.
+            df = pd.read_csv(arquivo, sep=';', low_memory=False)
+            
+        except UnicodeDecodeError:
+            print(f"   Aviso: Falha de encoding (UTF-8) para {arquivo.name}. Acionando fallback para 'ISO-8859-1'...")
+            # Fallback focado na correção de acentuação/encoding, mantendo a inferência de tipos
+            df = pd.read_csv(arquivo, sep=';', encoding='ISO-8859-1', low_memory=False)
 
-        # Executa a ingestão deste arquivo específico usando o dlt
         load_info = pipeline.run(
             df, 
             table_name=nome_tabela,

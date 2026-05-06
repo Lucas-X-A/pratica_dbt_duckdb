@@ -1,0 +1,10 @@
+projeto_teste_dbt:
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      # O caminho aponta para o banco criado pelo dlt no diretório raiz do exercício
+      path: '../project_data.duckdb'
+      schema: main
+      threads: 4
+

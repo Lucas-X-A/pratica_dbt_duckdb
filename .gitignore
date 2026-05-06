@@ -1,2 +1,4 @@
 *.xlsx
 data/prep.ipynb
+logs/*
+*.duckdb
