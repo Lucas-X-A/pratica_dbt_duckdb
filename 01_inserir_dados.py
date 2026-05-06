@@ -28,19 +28,23 @@ def carregar_dados_educacionais():
     # Itera sobre cada arquivo CSV encontrado na pasta
     for arquivo in arquivos_csv:
         # Usa o nome do arquivo (sem o .csv) para nomear a tabela no DuckDB
-        # Exemplo: inscricoes_fila.csv vira a tabela inscricoes_fila
         nome_tabela = arquivo.stem 
         
         print(f"-> Lendo {arquivo.name} e carregando na tabela '{nome_tabela}'...")
         
-        # Carrega o CSV em um DataFrame pandas
-        df = pd.read_csv(arquivo)
+        # Tenta carregar com o padrão (UTF-8 e vírgula)
+        try:
+            df = pd.read_csv(arquivo)
+        except (UnicodeDecodeError, pd.errors.ParserError):
+            print(f"   Aviso: Formato padrão falhou para {arquivo.name}. Acionando fallback (sep=';', encoding='ISO-8859-1')...")
+            # Fallback em caso de falha de encoding ou separador
+            df = pd.read_csv(arquivo, sep=';', encoding='ISO-8859-1')
 
         # Executa a ingestão deste arquivo específico usando o dlt
         load_info = pipeline.run(
             df, 
             table_name=nome_tabela,
-            write_disposition="replace" # Altere para "append" se desejar adicionar dados em cargas futuras
+            write_disposition="replace" 
         )
         
         print(f"Carga da tabela '{nome_tabela}' finalizada com sucesso!\n")
