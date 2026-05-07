@@ -22,11 +22,6 @@ Windows (PowerShell): .\.venv\Scripts\activate (Se der erro de permissão: Set-E
 Windows (CMD): .venv\Scripts\activate.bat
 
 Linux/macOS: source .venv/bin/activate
-
-### Aqui está o guia completo unificado em um único arquivo Markdown. Ele consolida o passo a passo da configuração, os arquivos do Python, as configurações do dbt e a modelagem SQL, aplicando as transformações de limpeza e a lógica de Slowly Changing Dimension (SCD Tipo 2) diretamente na camada de staging.
-
-Você pode copiar o conteúdo abaixo e salvar como README.md ou exercicio_mds.md na raiz do seu projeto.
-
 Markdown
 # Exercício Prático: Modern Data Stack (dlt, dbt e DuckDB)
 

@@ -31,9 +31,9 @@ models:
      intermediate:
       +schema: intermediate
       +materialization: view
-    marts:
+    serving:
       +materialized: table
-      +schema: marts
+      +schema: serving
 ```
 
 ## Aquivo de definição de perfil e acesso ao banco (profiles.yml):
@@ -45,7 +45,7 @@ projeto_educacao:
       type: duckdb
       # O caminho aponta para o banco criado pelo dlt no diretório raiz do exercício
       path: '../project_data.duckdb'
-      schema: dev_marts
+      schema: main
       threads: 4
 ```
 
