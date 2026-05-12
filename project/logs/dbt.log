@@ -1,0 +1,1933 @@
+[0m22:11:08.682392 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002229273F8C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000222949EBC50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000222949EBB10>]}
+
+
+============================== 22:11:08.687933 | 68ac24be-3f49-48ca-9aa8-c4f342e4e5e5 ==============================
+[0m22:11:08.687933 [info ] [MainThread]: Running with dbt=1.11.9
+[0m22:11:08.688807 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\Rodrigo\\Desktop\\quizz\\pratica_dbt_duckdb\\project', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'use_colors': 'True', 'indirect_selection': 'eager', 'invocation_command': 'dbt run --full-refresh', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\Rodrigo\\Desktop\\quizz\\pratica_dbt_duckdb\\project\\logs'}
+[0m22:11:09.052469 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '68ac24be-3f49-48ca-9aa8-c4f342e4e5e5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022292D003E0>]}
+[0m22:11:09.146989 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '68ac24be-3f49-48ca-9aa8-c4f342e4e5e5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002229384BF00>]}
+[0m22:11:09.150501 [info ] [MainThread]: Registered adapter: duckdb=1.10.1
+[0m22:11:09.587627 [debug] [MainThread]: checksum: f8bb6a62265c70f2530bed05e52c2cee1c1844b101d398a67d5798350ab914c5, vars: {}, profile: , target: , version: 1.11.9
+[0m22:11:09.588911 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m22:11:09.589509 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '68ac24be-3f49-48ca-9aa8-c4f342e4e5e5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022294AC9D50>]}
+[0m22:11:11.099530 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'srv_analise_hipotese_rj' in the 'models' section of file 'models\schema.yml'
+[0m22:11:11.249321 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.projeto_educacao.unique_srv_analise_hipotese_rj_co_entidade.e9c962ba76' (models\schema.yml) depends on a node named 'srv_analise_hipotese_rj' in package '' which was not found
+[0m22:11:11.250040 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.projeto_educacao.not_null_srv_analise_hipotese_rj_co_entidade.348ff849bd' (models\schema.yml) depends on a node named 'srv_analise_hipotese_rj' in package '' which was not found
+[0m22:11:11.355822 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '68ac24be-3f49-48ca-9aa8-c4f342e4e5e5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002229506D400>]}
+[0m22:11:11.450229 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\Rodrigo\Desktop\quizz\pratica_dbt_duckdb\project\target\manifest.json
+[0m22:11:11.453964 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\Rodrigo\Desktop\quizz\pratica_dbt_duckdb\project\target\semantic_manifest.json
+[0m22:11:11.472207 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '68ac24be-3f49-48ca-9aa8-c4f342e4e5e5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022295401C50>]}
+[0m22:11:11.472895 [info ] [MainThread]: Found 5 models, 477 macros
+[0m22:11:11.473433 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '68ac24be-3f49-48ca-9aa8-c4f342e4e5e5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022295099090>]}
+[0m22:11:11.475655 [info ] [MainThread]: 
+[0m22:11:11.476200 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m22:11:11.476671 [info ] [MainThread]: 
+[0m22:11:11.477626 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m22:11:11.483345 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_project_data'
+[0m22:11:11.495985 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_project_data'
+[0m22:11:11.500745 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_project_data'
+[0m22:11:11.615263 [debug] [ThreadPool]: Using duckdb connection "list_project_data"
+[0m22:11:11.615784 [debug] [ThreadPool]: Using duckdb connection "list_project_data"
+[0m22:11:11.616407 [debug] [ThreadPool]: Using duckdb connection "list_project_data"
+[0m22:11:11.616859 [debug] [ThreadPool]: On list_project_data: /* {"app": "dbt", "dbt_version": "1.11.9", "profile_name": "projeto_educacao", "target_name": "dev", "connection_name": "list_project_data"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = '"project_data"'
+    
+  
+  
+[0m22:11:11.617328 [debug] [ThreadPool]: On list_project_data: /* {"app": "dbt", "dbt_version": "1.11.9", "profile_name": "projeto_educacao", "target_name": "dev", "connection_name": "list_project_data"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = '"project_data"'
+    
+  
+  
+[0m22:11:11.617853 [debug] [ThreadPool]: On list_project_data: /* {"app": "dbt", "dbt_version": "1.11.9", "profile_name": "projeto_educacao", "target_name": "dev", "connection_name": "list_project_data"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = '"project_data"'
+    
+  
+  
+[0m22:11:11.618290 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m22:11:11.618635 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m22:11:11.619081 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m22:11:11.649574 [debug] [ThreadPool]: SQL status: OK in 0.031 seconds
+[0m22:11:11.650017 [debug] [ThreadPool]: SQL status: OK in 0.031 seconds
+[0m22:11:11.650364 [debug] [ThreadPool]: SQL status: OK in 0.032 seconds
+[0m22:11:11.651816 [debug] [ThreadPool]: On list_project_data: Close
+[0m22:11:11.652999 [debug] [ThreadPool]: On list_project_data: Close
+[0m22:11:11.654484 [debug] [ThreadPool]: On list_project_data: Close
+[0m22:11:11.655644 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_project_data, now create_project_data_main_staging)
+[0m22:11:11.656043 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_project_data, now create_project_data_main_serving)
+[0m22:11:11.656488 [debug] [ThreadPool]: Creating schema "database: "project_data"
+schema: "main_staging"
+"
+[0m22:11:11.656894 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_project_data, now create_project_data_main_intermediate)
+[0m22:11:11.657441 [debug] [ThreadPool]: Creating schema "database: "project_data"
+schema: "main_serving"
+"
+[0m22:11:11.664364 [debug] [ThreadPool]: Using duckdb connection "create_project_data_main_staging"
+[0m22:11:11.665017 [debug] [ThreadPool]: Creating schema "database: "project_data"
+schema: "main_intermediate"
+"
+[0m22:11:11.667857 [debug] [ThreadPool]: Using duckdb connection "create_project_data_main_serving"
+[0m22:11:11.668307 [debug] [ThreadPool]: On create_project_data_main_staging: /* {"app": "dbt", "dbt_version": "1.11.9", "profile_name": "projeto_educacao", "target_name": "dev", "connection_name": "create_project_data_main_staging"} */
+
+    
+        select type from duckdb_databases()
+        where lower(database_name)='project_data'
+        and type='sqlite'
+    
+  
+[0m22:11:11.671025 [debug] [ThreadPool]: Using duckdb connection "create_project_data_main_intermediate"
+[0m22:11:11.671556 [debug] [ThreadPool]: On create_project_data_main_serving: /* {"app": "dbt", "dbt_version": "1.11.9", "profile_name": "projeto_educacao", "target_name": "dev", "connection_name": "create_project_data_main_serving"} */
+
+    
+        select type from duckdb_databases()
+        where lower(database_name)='project_data'
+        and type='sqlite'
+    
+  
+[0m22:11:11.671944 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m22:11:11.672323 [debug] [ThreadPool]: On create_project_data_main_intermediate: /* {"app": "dbt", "dbt_version": "1.11.9", "profile_name": "projeto_educacao", "target_name": "dev", "connection_name": "create_project_data_main_intermediate"} */
+
+    
+        select type from duckdb_databases()
+        where lower(database_name)='project_data'
+        and type='sqlite'
+    
+  
+[0m22:11:11.672714 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m22:11:11.673279 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m22:11:11.674045 [debug] [ThreadPool]: SQL status: OK in 0.002 seconds
+[0m22:11:11.674505 [debug] [ThreadPool]: SQL status: OK in 0.002 seconds
+[0m22:11:11.674993 [debug] [ThreadPool]: SQL status: OK in 0.002 seconds
+[0m22:11:11.676269 [debug] [ThreadPool]: Using duckdb connection "create_project_data_main_staging"
+[0m22:11:11.677396 [debug] [ThreadPool]: Using duckdb connection "create_project_data_main_serving"
+[0m22:11:11.677763 [debug] [ThreadPool]: On create_project_data_main_staging: BEGIN
+[0m22:11:11.678884 [debug] [ThreadPool]: Using duckdb connection "create_project_data_main_intermediate"
+[0m22:11:11.679182 [debug] [ThreadPool]: On create_project_data_main_serving: BEGIN
+[0m22:11:11.679594 [debug] [ThreadPool]: On create_project_data_main_intermediate: BEGIN
+[0m22:11:11.679968 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m22:11:11.680345 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m22:11:11.680663 [debug] [ThreadPool]: Using duckdb connection "create_project_data_main_staging"
+[0m22:11:11.680956 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m22:11:11.681236 [debug] [ThreadPool]: Using duckdb connection "create_project_data_main_serving"
+[0m22:11:11.681543 [debug] [ThreadPool]: On create_project_data_main_staging: /* {"app": "dbt", "dbt_version": "1.11.9", "profile_name": "projeto_educacao", "target_name": "dev", "connection_name": "create_project_data_main_staging"} */
+
+    
+    
+        create schema if not exists "project_data"."main_staging"
+    
+[0m22:11:11.681849 [debug] [ThreadPool]: Using duckdb connection "create_project_data_main_intermediate"
+[0m22:11:11.682153 [debug] [ThreadPool]: On create_project_data_main_serving: /* {"app": "dbt", "dbt_version": "1.11.9", "profile_name": "projeto_educacao", "target_name": "dev", "connection_name": "create_project_data_main_serving"} */
+
+    
+    
+        create schema if not exists "project_data"."main_serving"
+    
+[0m22:11:11.682589 [debug] [ThreadPool]: On create_project_data_main_intermediate: /* {"app": "dbt", "dbt_version": "1.11.9", "profile_name": "projeto_educacao", "target_name": "dev", "connection_name": "create_project_data_main_intermediate"} */
+
+    
+    
+        create schema if not exists "project_data"."main_intermediate"
+    
+[0m22:11:11.683007 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m22:11:11.683390 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m22:11:11.684310 [debug] [ThreadPool]: On create_project_data_main_staging: COMMIT
+[0m22:11:11.684620 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m22:11:11.685463 [debug] [ThreadPool]: On create_project_data_main_serving: COMMIT
+[0m22:11:11.685792 [debug] [ThreadPool]: Using duckdb connection "create_project_data_main_staging"
+[0m22:11:11.686623 [debug] [ThreadPool]: On create_project_data_main_intermediate: COMMIT
+[0m22:11:11.686957 [debug] [ThreadPool]: Using duckdb connection "create_project_data_main_serving"
+[0m22:11:11.687269 [debug] [ThreadPool]: On create_project_data_main_staging: COMMIT
+[0m22:11:11.687575 [debug] [ThreadPool]: Using duckdb connection "create_project_data_main_intermediate"
+[0m22:11:11.687870 [debug] [ThreadPool]: On create_project_data_main_serving: COMMIT
+[0m22:11:11.688263 [debug] [ThreadPool]: On create_project_data_main_intermediate: COMMIT
+[0m22:11:11.691747 [debug] [ThreadPool]: SQL status: OK in 0.004 seconds
+[0m22:11:11.692178 [debug] [ThreadPool]: On create_project_data_main_staging: Close
+[0m22:11:11.693915 [debug] [ThreadPool]: SQL status: OK in 0.005 seconds
+[0m22:11:11.694464 [debug] [ThreadPool]: On create_project_data_main_serving: Close
+[0m22:11:11.696318 [debug] [ThreadPool]: SQL status: OK in 0.008 seconds
+[0m22:11:11.696710 [debug] [ThreadPool]: On create_project_data_main_intermediate: Close
+[0m22:11:11.698357 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_project_data_main_staging'
+[0m22:11:11.704433 [debug] [ThreadPool]: Using duckdb connection "list_project_data_main_staging"
+[0m22:11:11.704986 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_project_data_main_serving'
+[0m22:11:11.705498 [debug] [ThreadPool]: On list_project_data_main_staging: BEGIN
+[0m22:11:11.705977 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_project_data_main_intermediate'
+[0m22:11:11.708668 [debug] [ThreadPool]: Using duckdb connection "list_project_data_main_serving"
+[0m22:11:11.709153 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m22:11:11.711272 [debug] [ThreadPool]: Using duckdb connection "list_project_data_main_intermediate"
+[0m22:11:11.711663 [debug] [ThreadPool]: On list_project_data_main_serving: BEGIN
+[0m22:11:11.712183 [debug] [ThreadPool]: On list_project_data_main_intermediate: BEGIN
+[0m22:11:11.712543 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m22:11:11.712856 [debug] [ThreadPool]: SQL status: OK in 0.004 seconds
+[0m22:11:11.713127 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m22:11:11.713611 [debug] [ThreadPool]: Using duckdb connection "list_project_data_main_staging"
+[0m22:11:11.714049 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m22:11:11.714410 [debug] [ThreadPool]: On list_project_data_main_staging: /* {"app": "dbt", "dbt_version": "1.11.9", "profile_name": "projeto_educacao", "target_name": "dev", "connection_name": "list_project_data_main_staging"} */
+select
+      'project_data' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'main_staging'
+    and lower(table_catalog) = 'project_data'
+  
+[0m22:11:11.714734 [debug] [ThreadPool]: SQL status: OK in 0.002 seconds
+[0m22:11:11.715011 [debug] [ThreadPool]: Using duckdb connection "list_project_data_main_serving"
+[0m22:11:11.715476 [debug] [ThreadPool]: Using duckdb connection "list_project_data_main_intermediate"
+[0m22:11:11.715803 [debug] [ThreadPool]: On list_project_data_main_serving: /* {"app": "dbt", "dbt_version": "1.11.9", "profile_name": "projeto_educacao", "target_name": "dev", "connection_name": "list_project_data_main_serving"} */
+select
+      'project_data' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'main_serving'
+    and lower(table_catalog) = 'project_data'
+  
+[0m22:11:11.716178 [debug] [ThreadPool]: On list_project_data_main_intermediate: /* {"app": "dbt", "dbt_version": "1.11.9", "profile_name": "projeto_educacao", "target_name": "dev", "connection_name": "list_project_data_main_intermediate"} */
+select
+      'project_data' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'main_intermediate'
+    and lower(table_catalog) = 'project_data'
+  
+[0m22:11:11.721046 [debug] [ThreadPool]: SQL status: OK in 0.006 seconds
+[0m22:11:11.721464 [debug] [ThreadPool]: SQL status: OK in 0.005 seconds
+[0m22:11:11.721760 [debug] [ThreadPool]: SQL status: OK in 0.005 seconds
+[0m22:11:11.723042 [debug] [ThreadPool]: On list_project_data_main_staging: ROLLBACK
+[0m22:11:11.724134 [debug] [ThreadPool]: On list_project_data_main_intermediate: ROLLBACK
+[0m22:11:11.725170 [debug] [ThreadPool]: On list_project_data_main_serving: ROLLBACK
+[0m22:11:11.727383 [debug] [ThreadPool]: Failed to rollback 'list_project_data_main_staging'
+[0m22:11:11.727833 [debug] [ThreadPool]: On list_project_data_main_staging: Close
+[0m22:11:11.729156 [debug] [ThreadPool]: Failed to rollback 'list_project_data_main_intermediate'
+[0m22:11:11.729547 [debug] [ThreadPool]: On list_project_data_main_intermediate: Close
+[0m22:11:11.730698 [debug] [ThreadPool]: Failed to rollback 'list_project_data_main_serving'
+[0m22:11:11.731027 [debug] [ThreadPool]: On list_project_data_main_serving: Close
+[0m22:11:11.731756 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '68ac24be-3f49-48ca-9aa8-c4f342e4e5e5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000222953E7050>]}
+[0m22:11:11.732249 [debug] [MainThread]: Using duckdb connection "master"
+[0m22:11:11.732554 [debug] [MainThread]: On master: BEGIN
+[0m22:11:11.732833 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m22:11:11.733478 [debug] [MainThread]: SQL status: OK in 0.001 seconds
+[0m22:11:11.733801 [debug] [MainThread]: On master: COMMIT
+[0m22:11:11.734096 [debug] [MainThread]: Using duckdb connection "master"
+[0m22:11:11.734374 [debug] [MainThread]: On master: COMMIT
+[0m22:11:11.734919 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m22:11:11.735238 [debug] [MainThread]: On master: Close
+[0m22:11:11.739758 [debug] [Thread-1 (]: Began running node model.projeto_educacao.stg_gestor_escolar
+[0m22:11:11.740214 [debug] [Thread-2 (]: Began running node model.projeto_educacao.stg_ied_escolas
+[0m22:11:11.740917 [info ] [Thread-1 (]: 1 of 5 START sql view model main_staging.stg_gestor_escolar .................... [RUN]
+[0m22:11:11.742309 [debug] [Thread-1 (]: Acquiring new duckdb connection 'model.projeto_educacao.stg_gestor_escolar'
+[0m22:11:11.741472 [info ] [Thread-2 (]: 2 of 5 START sql view model main_staging.stg_ied_escolas ....................... [RUN]
+[0m22:11:11.743040 [debug] [Thread-1 (]: Began compiling node model.projeto_educacao.stg_gestor_escolar
+[0m22:11:11.743717 [debug] [Thread-2 (]: Acquiring new duckdb connection 'model.projeto_educacao.stg_ied_escolas'
+[0m22:11:11.754002 [debug] [Thread-1 (]: Writing injected SQL for node "model.projeto_educacao.stg_gestor_escolar"
+[0m22:11:11.754515 [debug] [Thread-2 (]: Began compiling node model.projeto_educacao.stg_ied_escolas
+[0m22:11:11.756624 [debug] [Thread-2 (]: Writing injected SQL for node "model.projeto_educacao.stg_ied_escolas"
+[0m22:11:11.759494 [debug] [Thread-2 (]: Began executing node model.projeto_educacao.stg_ied_escolas
+[0m22:11:11.760221 [debug] [Thread-1 (]: Began executing node model.projeto_educacao.stg_gestor_escolar
+[0m22:11:11.795361 [debug] [Thread-2 (]: Writing runtime sql for node "model.projeto_educacao.stg_ied_escolas"
+[0m22:11:11.799912 [debug] [Thread-1 (]: Writing runtime sql for node "model.projeto_educacao.stg_gestor_escolar"
+[0m22:11:11.803956 [debug] [Thread-1 (]: Using duckdb connection "model.projeto_educacao.stg_gestor_escolar"
+[0m22:11:11.804480 [debug] [Thread-1 (]: On model.projeto_educacao.stg_gestor_escolar: BEGIN
+[0m22:11:11.805030 [debug] [Thread-2 (]: Using duckdb connection "model.projeto_educacao.stg_ied_escolas"
+[0m22:11:11.805431 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m22:11:11.805829 [debug] [Thread-2 (]: On model.projeto_educacao.stg_ied_escolas: BEGIN
+[0m22:11:11.806666 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m22:11:11.807343 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m22:11:11.807742 [debug] [Thread-1 (]: Using duckdb connection "model.projeto_educacao.stg_gestor_escolar"
+[0m22:11:11.808131 [debug] [Thread-2 (]: SQL status: OK in 0.002 seconds
+[0m22:11:11.808588 [debug] [Thread-1 (]: On model.projeto_educacao.stg_gestor_escolar: /* {"app": "dbt", "dbt_version": "1.11.9", "profile_name": "projeto_educacao", "target_name": "dev", "node_id": "model.projeto_educacao.stg_gestor_escolar"} */
+
+  
+  create view "project_data"."main_staging"."stg_gestor_escolar__dbt_tmp" as (
+    SELECT
+    CAST(nu_ano_censo AS INTEGER) AS nu_ano_censo,
+
+    CAST(co_entidade AS BIGINT) AS co_entidade,
+
+    CAST(qt_gest_bas AS INTEGER) AS qt_gest_bas,
+
+    CAST(qt_gest_bas_esco_sup_grad AS INTEGER)
+        AS qt_gest_bas_esco_sup_grad,
+
+    CAST(qt_gest_bas_esco_sup_pos_espec AS INTEGER)
+        AS qt_gest_bas_esco_sup_pos_espec,
+
+    CAST(qt_gest_bas_esco_sup_pos_mestra AS INTEGER)
+        AS qt_gest_bas_esco_sup_pos_mestra,
+
+    CAST(qt_gest_bas_esco_sup_pos_douto AS INTEGER)
+        AS qt_gest_bas_esco_sup_pos_douto,
+
+    CAST(qt_gest_bas_diretor AS INTEGER)
+        AS qt_gest_bas_diretor,
+
+    CAST(qt_gest_bas_acesso_cargo_conc AS INTEGER)
+        AS qt_gest_bas_acesso_cargo_conc,
+
+    CAST(qt_gest_bas_acesso_cargo_indic AS INTEGER)
+        AS qt_gest_bas_acesso_cargo_indic
+
+FROM raw.tabela_gestor_escolar_2025
+  );
+
+[0m22:11:11.809061 [debug] [Thread-2 (]: Using duckdb connection "model.projeto_educacao.stg_ied_escolas"
+[0m22:11:11.809757 [debug] [Thread-2 (]: On model.projeto_educacao.stg_ied_escolas: /* {"app": "dbt", "dbt_version": "1.11.9", "profile_name": "projeto_educacao", "target_name": "dev", "node_id": "model.projeto_educacao.stg_ied_escolas"} */
+
+  
+  create view "project_data"."main_staging"."stg_ied_escolas__dbt_tmp" as (
+    SELECT
+    CAST(nu_ano_censo AS INTEGER) AS nu_ano_censo,
+
+    CAST(co_entidade AS BIGINT) AS co_entidade,
+
+    sg_uf,
+    no_municipio,
+    no_entidade,
+
+    CAST(NULLIF(fun_cat_1, '--') AS DOUBLE) AS fun_cat_1,
+    CAST(NULLIF(fun_cat_2, '--') AS DOUBLE) AS fun_cat_2,
+    CAST(NULLIF(fun_cat_3, '--') AS DOUBLE) AS fun_cat_3,
+    CAST(NULLIF(fun_cat_4, '--') AS DOUBLE) AS fun_cat_4,
+    CAST(NULLIF(fun_cat_5, '--') AS DOUBLE) AS fun_cat_5,
+    CAST(NULLIF(fun_cat_6, '--') AS DOUBLE) AS fun_cat_6
+
+FROM raw.ied_escolas_2025
+
+WHERE sg_uf = 'RJ'
+  );
+
+[0m22:11:11.810534 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m22:11:11.817432 [debug] [Thread-1 (]: Using duckdb connection "model.projeto_educacao.stg_gestor_escolar"
+[0m22:11:11.817943 [debug] [Thread-1 (]: On model.projeto_educacao.stg_gestor_escolar: /* {"app": "dbt", "dbt_version": "1.11.9", "profile_name": "projeto_educacao", "target_name": "dev", "node_id": "model.projeto_educacao.stg_gestor_escolar"} */
+alter view "project_data"."main_staging"."stg_gestor_escolar__dbt_tmp" rename to "stg_gestor_escolar"
+[0m22:11:11.818338 [debug] [Thread-2 (]: SQL status: OK in 0.008 seconds
+[0m22:11:11.821918 [debug] [Thread-2 (]: Using duckdb connection "model.projeto_educacao.stg_ied_escolas"
+[0m22:11:11.822389 [debug] [Thread-2 (]: On model.projeto_educacao.stg_ied_escolas: /* {"app": "dbt", "dbt_version": "1.11.9", "profile_name": "projeto_educacao", "target_name": "dev", "node_id": "model.projeto_educacao.stg_ied_escolas"} */
+alter view "project_data"."main_staging"."stg_ied_escolas__dbt_tmp" rename to "stg_ied_escolas"
+[0m22:11:11.822840 [debug] [Thread-1 (]: SQL status: OK in 0.004 seconds
+[0m22:11:11.837801 [debug] [Thread-1 (]: On model.projeto_educacao.stg_gestor_escolar: COMMIT
+[0m22:11:11.838432 [debug] [Thread-2 (]: SQL status: OK in 0.015 seconds
+[0m22:11:11.838894 [debug] [Thread-1 (]: Using duckdb connection "model.projeto_educacao.stg_gestor_escolar"
+[0m22:11:11.840968 [debug] [Thread-2 (]: On model.projeto_educacao.stg_ied_escolas: COMMIT
+[0m22:11:11.841573 [debug] [Thread-1 (]: On model.projeto_educacao.stg_gestor_escolar: COMMIT
+[0m22:11:11.841977 [debug] [Thread-2 (]: Using duckdb connection "model.projeto_educacao.stg_ied_escolas"
+[0m22:11:11.842457 [debug] [Thread-2 (]: On model.projeto_educacao.stg_ied_escolas: COMMIT
+[0m22:11:11.845855 [debug] [Thread-1 (]: SQL status: OK in 0.003 seconds
+[0m22:11:11.852443 [debug] [Thread-1 (]: Using duckdb connection "model.projeto_educacao.stg_gestor_escolar"
+[0m22:11:11.852970 [debug] [Thread-1 (]: On model.projeto_educacao.stg_gestor_escolar: /* {"app": "dbt", "dbt_version": "1.11.9", "profile_name": "projeto_educacao", "target_name": "dev", "node_id": "model.projeto_educacao.stg_gestor_escolar"} */
+
+      drop view if exists "project_data"."main_staging"."stg_gestor_escolar__dbt_backup" cascade
+    
+[0m22:11:11.853363 [debug] [Thread-2 (]: SQL status: OK in 0.011 seconds
+[0m22:11:11.856630 [debug] [Thread-2 (]: Using duckdb connection "model.projeto_educacao.stg_ied_escolas"
+[0m22:11:11.857137 [debug] [Thread-2 (]: On model.projeto_educacao.stg_ied_escolas: /* {"app": "dbt", "dbt_version": "1.11.9", "profile_name": "projeto_educacao", "target_name": "dev", "node_id": "model.projeto_educacao.stg_ied_escolas"} */
+
+      drop view if exists "project_data"."main_staging"."stg_ied_escolas__dbt_backup" cascade
+    
+[0m22:11:11.857542 [debug] [Thread-1 (]: SQL status: OK in 0.004 seconds
+[0m22:11:11.860362 [debug] [Thread-1 (]: On model.projeto_educacao.stg_gestor_escolar: Close
+[0m22:11:11.860898 [debug] [Thread-2 (]: SQL status: OK in 0.003 seconds
+[0m22:11:11.863689 [debug] [Thread-2 (]: On model.projeto_educacao.stg_ied_escolas: Close
+[0m22:11:11.865312 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '68ac24be-3f49-48ca-9aa8-c4f342e4e5e5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000222954C7EE0>]}
+[0m22:11:11.865841 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '68ac24be-3f49-48ca-9aa8-c4f342e4e5e5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022292C74190>]}
+[0m22:11:11.866630 [info ] [Thread-1 (]: 1 of 5 OK created sql view model main_staging.stg_gestor_escolar ............... [[32mOK[0m in 0.12s]
+[0m22:11:11.867994 [debug] [Thread-1 (]: Finished running node model.projeto_educacao.stg_gestor_escolar
+[0m22:11:11.867223 [info ] [Thread-2 (]: 2 of 5 OK created sql view model main_staging.stg_ied_escolas .................. [[32mOK[0m in 0.12s]
+[0m22:11:11.868892 [debug] [Thread-2 (]: Finished running node model.projeto_educacao.stg_ied_escolas
+[0m22:11:11.869655 [debug] [Thread-3 (]: Began running node model.projeto_educacao.int_gestor_qualificacao
+[0m22:11:11.870185 [debug] [Thread-4 (]: Began running node model.projeto_educacao.int_professor_esforco_rj
+[0m22:11:11.870920 [info ] [Thread-3 (]: 3 of 5 START sql view model main_intermediate.int_gestor_qualificacao .......... [RUN]
+[0m22:11:11.872647 [debug] [Thread-3 (]: Acquiring new duckdb connection 'model.projeto_educacao.int_gestor_qualificacao'
+[0m22:11:11.871661 [info ] [Thread-4 (]: 4 of 5 START sql view model main_intermediate.int_professor_esforco_rj ......... [RUN]
+[0m22:11:11.873441 [debug] [Thread-3 (]: Began compiling node model.projeto_educacao.int_gestor_qualificacao
+[0m22:11:11.874148 [debug] [Thread-4 (]: Acquiring new duckdb connection 'model.projeto_educacao.int_professor_esforco_rj'
+[0m22:11:11.878037 [debug] [Thread-3 (]: Writing injected SQL for node "model.projeto_educacao.int_gestor_qualificacao"
+[0m22:11:11.878555 [debug] [Thread-4 (]: Began compiling node model.projeto_educacao.int_professor_esforco_rj
+[0m22:11:11.882210 [debug] [Thread-4 (]: Writing injected SQL for node "model.projeto_educacao.int_professor_esforco_rj"
+[0m22:11:11.884016 [debug] [Thread-3 (]: Began executing node model.projeto_educacao.int_gestor_qualificacao
+[0m22:11:11.888155 [debug] [Thread-3 (]: Writing runtime sql for node "model.projeto_educacao.int_gestor_qualificacao"
+[0m22:11:11.888659 [debug] [Thread-4 (]: Began executing node model.projeto_educacao.int_professor_esforco_rj
+[0m22:11:11.891824 [debug] [Thread-4 (]: Writing runtime sql for node "model.projeto_educacao.int_professor_esforco_rj"
+[0m22:11:11.893465 [debug] [Thread-3 (]: Using duckdb connection "model.projeto_educacao.int_gestor_qualificacao"
+[0m22:11:11.894183 [debug] [Thread-3 (]: On model.projeto_educacao.int_gestor_qualificacao: BEGIN
+[0m22:11:11.894929 [debug] [Thread-4 (]: Using duckdb connection "model.projeto_educacao.int_professor_esforco_rj"
+[0m22:11:11.895506 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m22:11:11.896002 [debug] [Thread-4 (]: On model.projeto_educacao.int_professor_esforco_rj: BEGIN
+[0m22:11:11.896613 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m22:11:11.897130 [debug] [Thread-3 (]: SQL status: OK in 0.002 seconds
+[0m22:11:11.897544 [debug] [Thread-3 (]: Using duckdb connection "model.projeto_educacao.int_gestor_qualificacao"
+[0m22:11:11.897907 [debug] [Thread-4 (]: SQL status: OK in 0.001 seconds
+[0m22:11:11.898357 [debug] [Thread-3 (]: On model.projeto_educacao.int_gestor_qualificacao: /* {"app": "dbt", "dbt_version": "1.11.9", "profile_name": "projeto_educacao", "target_name": "dev", "node_id": "model.projeto_educacao.int_gestor_qualificacao"} */
+
+  
+  create view "project_data"."main_intermediate"."int_gestor_qualificacao__dbt_tmp" as (
+    -- int_gestor_qualificacao.sql
+
+with stg_gestor as (
+    select * from "project_data"."main_staging"."stg_gestor_escolar"
+),
+
+stg_escolas_rj as (
+    -- Usamos a staging de escolas apenas para filtrar o estado
+    select co_entidade from "project_data"."main_staging"."stg_ied_escolas"
+    where sg_uf = 'RJ'
+),
+
+filtrado_rj as (
+    select g.* 
+    from stg_gestor g
+    inner join stg_escolas_rj e on g.co_entidade = e.co_entidade
+),
+
+metricas as (
+    select
+        co_entidade,
+        nu_ano_censo,
+        total_gestores,
+        -- Índice de Qualificação Acadêmica (IQA)
+        -- Pesos: Graduação(1), Especialização(2), Mestrado(3), Doutorado(4)
+        case 
+            when total_gestores = 0 then null
+            else round(
+                cast(
+                    (qt_graduado * 1) + 
+                    (qt_pos_especialista * 2) + 
+                    (qt_pos_mestre * 3) + 
+                    (qt_pos_doutor * 4) 
+                as double) / (4.0 * total_gestores), 4
+            )
+        end as idx_qualificacao_academica,
+
+        -- Proporção de Acesso Técnico (Concurso/Seleção/Eleição)
+        case 
+            when total_gestores = 0 then null
+            else round(cast(qt_acesso_tecnico as double) / total_gestores, 4)
+        end as prop_acesso_tecnico
+    from filtrado_rj
+)
+
+select 
+    *,
+    -- Score Composto: Média entre formação e forma de acesso
+    round((idx_qualificacao_academica + prop_acesso_tecnico) / 2.0, 4) as score_qualificacao_gestor
+from metricas
+  );
+
+[0m22:11:11.898819 [debug] [Thread-4 (]: Using duckdb connection "model.projeto_educacao.int_professor_esforco_rj"
+[0m22:11:11.899604 [debug] [Thread-4 (]: On model.projeto_educacao.int_professor_esforco_rj: /* {"app": "dbt", "dbt_version": "1.11.9", "profile_name": "projeto_educacao", "target_name": "dev", "node_id": "model.projeto_educacao.int_professor_esforco_rj"} */
+
+  
+  create view "project_data"."main_intermediate"."int_professor_esforco_rj__dbt_tmp" as (
+    -- int_professor_esforco_rj.sql
+with source as (
+    select * from "project_data"."main_staging"."stg_ied_escolas"
+    where sg_uf = 'RJ'
+),
+
+calculo_total as (
+    select
+        *,
+        -- Soma de todas as categorias para ter o denominador
+        (coalesce(fun_cat_1, 0) + coalesce(fun_cat_2, 0) + coalesce(fun_cat_3, 0) + 
+         coalesce(fun_cat_4, 0) + coalesce(fun_cat_5, 0) + coalesce(fun_cat_6, 0)) as total_docentes
+    from source
+),
+
+ied_calculado as (
+    select
+        co_entidade,
+        nu_ano_censo,
+        no_entidade,
+        no_municipio,
+        total_docentes,
+        -- Média ponderada: (Qtd na Categoria * Peso da Categoria) / Total
+        case 
+            when total_docentes = 0 then null
+            else round(
+                cast(
+                    (fun_cat_1 * 1.0) + (fun_cat_2 * 2.0) + (fun_cat_3 * 3.0) + 
+                    (fun_cat_4 * 4.0) + (fun_cat_5 * 5.0) + (fun_cat_6 * 6.0)
+                as double) / total_docentes, 2
+            )
+        end as ied
+    from calculo_total
+)
+
+select * from ied_calculado
+  );
+
+[0m22:11:11.902147 [debug] [Thread-3 (]: DuckDB adapter: duckdb error: Binder Error: Referenced column "total_gestores" not found in FROM clause!
+Candidate bindings: "qt_gest_bas_diretor", "qt_gest_bas", "qt_gest_bas_esco_sup_pos_douto", "qt_gest_bas_esco_sup_pos_espec", "qt_gest_bas_esco_sup_pos_mestra"
+
+LINE 27:         total_gestores,
+                 ^
+[0m22:11:11.902676 [debug] [Thread-4 (]: SQL status: OK in 0.003 seconds
+[0m22:11:11.903202 [debug] [Thread-3 (]: DuckDB adapter: Error running SQL: /* {"app": "dbt", "dbt_version": "1.11.9", "profile_name": "projeto_educacao", "target_name": "dev", "node_id": "model.projeto_educacao.int_gestor_qualificacao"} */
+
+  
+  create view "project_data"."main_intermediate"."int_gestor_qualificacao__dbt_tmp" as (
+    -- int_gestor_qualificacao.sql
+
+with stg_gestor as (
+    select * from "project_data"."main_staging"."stg_gestor_escolar"
+),
+
+stg_escolas_rj as (
+    -- Usamos a staging de escolas apenas para filtrar o estado
+    select co_entidade from "project_data"."main_staging"."stg_ied_escolas"
+    where sg_uf = 'RJ'
+),
+
+filtrado_rj as (
+    select g.* 
+    from stg_gestor g
+    inner join stg_escolas_rj e on g.co_entidade = e.co_entidade
+),
+
+metricas as (
+    select
+        co_entidade,
+        nu_ano_censo,
+        total_gestores,
+        -- Índice de Qualificação Acadêmica (IQA)
+        -- Pesos: Graduação(1), Especialização(2), Mestrado(3), Doutorado(4)
+        case 
+            when total_gestores = 0 then null
+            else round(
+                cast(
+                    (qt_graduado * 1) + 
+                    (qt_pos_especialista * 2) + 
+                    (qt_pos_mestre * 3) + 
+                    (qt_pos_doutor * 4) 
+                as double) / (4.0 * total_gestores), 4
+            )
+        end as idx_qualificacao_academica,
+
+        -- Proporção de Acesso Técnico (Concurso/Seleção/Eleição)
+        case 
+            when total_gestores = 0 then null
+            else round(cast(qt_acesso_tecnico as double) / total_gestores, 4)
+        end as prop_acesso_tecnico
+    from filtrado_rj
+)
+
+select 
+    *,
+    -- Score Composto: Média entre formação e forma de acesso
+    round((idx_qualificacao_academica + prop_acesso_tecnico) / 2.0, 4) as score_qualificacao_gestor
+from metricas
+  );
+
+[0m22:11:11.906669 [debug] [Thread-4 (]: Using duckdb connection "model.projeto_educacao.int_professor_esforco_rj"
+[0m22:11:11.907153 [debug] [Thread-3 (]: DuckDB adapter: Rolling back transaction.
+[0m22:11:11.907636 [debug] [Thread-4 (]: On model.projeto_educacao.int_professor_esforco_rj: /* {"app": "dbt", "dbt_version": "1.11.9", "profile_name": "projeto_educacao", "target_name": "dev", "node_id": "model.projeto_educacao.int_professor_esforco_rj"} */
+alter view "project_data"."main_intermediate"."int_professor_esforco_rj__dbt_tmp" rename to "int_professor_esforco_rj"
+[0m22:11:11.908145 [debug] [Thread-3 (]: On model.projeto_educacao.int_gestor_qualificacao: ROLLBACK
+[0m22:11:11.909225 [debug] [Thread-4 (]: SQL status: OK in 0.001 seconds
+[0m22:11:11.910834 [debug] [Thread-4 (]: On model.projeto_educacao.int_professor_esforco_rj: COMMIT
+[0m22:11:11.911356 [debug] [Thread-4 (]: Using duckdb connection "model.projeto_educacao.int_professor_esforco_rj"
+[0m22:11:11.911818 [debug] [Thread-4 (]: On model.projeto_educacao.int_professor_esforco_rj: COMMIT
+[0m22:11:11.914604 [debug] [Thread-3 (]: Failed to rollback 'model.projeto_educacao.int_gestor_qualificacao'
+[0m22:11:11.915283 [debug] [Thread-3 (]: On model.projeto_educacao.int_gestor_qualificacao: Close
+[0m22:11:11.915727 [debug] [Thread-4 (]: SQL status: OK in 0.003 seconds
+[0m22:11:11.918285 [debug] [Thread-4 (]: Using duckdb connection "model.projeto_educacao.int_professor_esforco_rj"
+[0m22:11:11.919585 [debug] [Thread-4 (]: On model.projeto_educacao.int_professor_esforco_rj: /* {"app": "dbt", "dbt_version": "1.11.9", "profile_name": "projeto_educacao", "target_name": "dev", "node_id": "model.projeto_educacao.int_professor_esforco_rj"} */
+
+      drop view if exists "project_data"."main_intermediate"."int_professor_esforco_rj__dbt_backup" cascade
+    
+[0m22:11:11.920543 [debug] [Thread-4 (]: SQL status: OK in 0.000 seconds
+[0m22:11:11.922188 [debug] [Thread-4 (]: On model.projeto_educacao.int_professor_esforco_rj: Close
+[0m22:11:11.922923 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '68ac24be-3f49-48ca-9aa8-c4f342e4e5e5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022296885150>]}
+[0m22:11:11.923708 [info ] [Thread-4 (]: 4 of 5 OK created sql view model main_intermediate.int_professor_esforco_rj .... [[32mOK[0m in 0.05s]
+[0m22:11:11.924622 [debug] [Thread-4 (]: Finished running node model.projeto_educacao.int_professor_esforco_rj
+[0m22:11:11.931139 [debug] [Thread-3 (]: Runtime Error in model int_gestor_qualificacao (models\intermediate\int_gestor_qualificacao.sql)
+  Binder Error: Referenced column "total_gestores" not found in FROM clause!
+  Candidate bindings: "qt_gest_bas_diretor", "qt_gest_bas", "qt_gest_bas_esco_sup_pos_douto", "qt_gest_bas_esco_sup_pos_espec", "qt_gest_bas_esco_sup_pos_mestra"
+  
+  LINE 27:         total_gestores,
+                   ^
+[0m22:11:11.931732 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '68ac24be-3f49-48ca-9aa8-c4f342e4e5e5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002229699DE80>]}
+[0m22:11:11.932381 [error] [Thread-3 (]: 3 of 5 ERROR creating sql view model main_intermediate.int_gestor_qualificacao . [[31mERROR[0m in 0.06s]
+[0m22:11:11.933154 [debug] [Thread-3 (]: Finished running node model.projeto_educacao.int_gestor_qualificacao
+[0m22:11:11.933746 [debug] [Thread-7 (]: Marking all children of 'model.projeto_educacao.int_gestor_qualificacao' to be skipped because of status 'error'.  Reason: Runtime Error in model int_gestor_qualificacao (models\intermediate\int_gestor_qualificacao.sql)
+  Binder Error: Referenced column "total_gestores" not found in FROM clause!
+  Candidate bindings: "qt_gest_bas_diretor", "qt_gest_bas", "qt_gest_bas_esco_sup_pos_douto", "qt_gest_bas_esco_sup_pos_espec", "qt_gest_bas_esco_sup_pos_mestra"
+  
+  LINE 27:         total_gestores,
+                   ^.
+[0m22:11:11.935052 [debug] [Thread-1 (]: Began running node model.projeto_educacao.srv_hipotese_gestor_esforco_rj
+[0m22:11:11.935912 [info ] [Thread-1 (]: 5 of 5 SKIP relation main_serving.srv_hipotese_gestor_esforco_rj ............... [[33mSKIP[0m]
+[0m22:11:11.936675 [debug] [Thread-1 (]: Finished running node model.projeto_educacao.srv_hipotese_gestor_esforco_rj
+[0m22:11:11.938045 [debug] [MainThread]: Using duckdb connection "master"
+[0m22:11:11.938479 [debug] [MainThread]: On master: BEGIN
+[0m22:11:11.938771 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m22:11:11.939387 [debug] [MainThread]: SQL status: OK in 0.001 seconds
+[0m22:11:11.939708 [debug] [MainThread]: On master: COMMIT
+[0m22:11:11.940004 [debug] [MainThread]: Using duckdb connection "master"
+[0m22:11:11.940292 [debug] [MainThread]: On master: COMMIT
+[0m22:11:11.940752 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m22:11:11.941062 [debug] [MainThread]: On master: Close
+[0m22:11:11.941473 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m22:11:11.941742 [debug] [MainThread]: Connection 'create_project_data_main_staging' was properly closed.
+[0m22:11:11.942003 [debug] [MainThread]: Connection 'create_project_data_main_intermediate' was properly closed.
+[0m22:11:11.942482 [debug] [MainThread]: Connection 'create_project_data_main_serving' was properly closed.
+[0m22:11:11.943056 [debug] [MainThread]: Connection 'list_project_data_main_staging' was properly closed.
+[0m22:11:11.943453 [debug] [MainThread]: Connection 'list_project_data_main_serving' was properly closed.
+[0m22:11:11.943916 [debug] [MainThread]: Connection 'list_project_data_main_intermediate' was properly closed.
+[0m22:11:11.944422 [debug] [MainThread]: Connection 'model.projeto_educacao.stg_gestor_escolar' was properly closed.
+[0m22:11:11.944798 [debug] [MainThread]: Connection 'model.projeto_educacao.stg_ied_escolas' was properly closed.
+[0m22:11:11.945214 [debug] [MainThread]: Connection 'model.projeto_educacao.int_gestor_qualificacao' was properly closed.
+[0m22:11:11.945566 [debug] [MainThread]: Connection 'model.projeto_educacao.int_professor_esforco_rj' was properly closed.
+[0m22:11:11.946082 [info ] [MainThread]: 
+[0m22:11:11.946657 [info ] [MainThread]: Finished running 1 table model, 4 view models in 0 hours 0 minutes and 0.47 seconds (0.47s).
+[0m22:11:11.948550 [debug] [MainThread]: Command end result
+[0m22:11:11.996437 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\Rodrigo\Desktop\quizz\pratica_dbt_duckdb\project\target\manifest.json
+[0m22:11:12.000306 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\Rodrigo\Desktop\quizz\pratica_dbt_duckdb\project\target\semantic_manifest.json
+[0m22:11:12.008517 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\Rodrigo\Desktop\quizz\pratica_dbt_duckdb\project\target\run_results.json
+[0m22:11:12.008991 [info ] [MainThread]: 
+[0m22:11:12.009547 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m22:11:12.010775 [info ] [MainThread]: 
+[0m22:11:12.011330 [error] [MainThread]: [31mFailure in model int_gestor_qualificacao (models\intermediate\int_gestor_qualificacao.sql)[0m
+[0m22:11:12.012354 [error] [MainThread]:   Runtime Error in model int_gestor_qualificacao (models\intermediate\int_gestor_qualificacao.sql)
+  Binder Error: Referenced column "total_gestores" not found in FROM clause!
+  Candidate bindings: "qt_gest_bas_diretor", "qt_gest_bas", "qt_gest_bas_esco_sup_pos_douto", "qt_gest_bas_esco_sup_pos_espec", "qt_gest_bas_esco_sup_pos_mestra"
+  
+  LINE 27:         total_gestores,
+                   ^
+[0m22:11:12.013105 [info ] [MainThread]: 
+[0m22:11:12.013724 [info ] [MainThread]:   compiled code at target\compiled\projeto_educacao\models\intermediate\int_gestor_qualificacao.sql
+[0m22:11:12.014145 [info ] [MainThread]: 
+[0m22:11:12.014558 [info ] [MainThread]: Done. PASS=3 WARN=0 ERROR=1 SKIP=1 NO-OP=0 TOTAL=5
+[0m22:11:12.016123 [debug] [MainThread]: Command `dbt run` failed at 22:11:12.015921 after 3.48 seconds
+[0m22:11:12.016634 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022292C01DF0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002229518A390>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000222969EAED0>]}
+[0m22:11:12.017070 [debug] [MainThread]: Flushing usage events
+[0m22:11:13.036059 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m22:12:48.337869 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C5CC15F8C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C5CE40BC50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C5CE40BB10>]}
+
+
+============================== 22:12:48.343117 | 2ed0b4ec-1ddf-491b-9212-b64cef64f1a0 ==============================
+[0m22:12:48.343117 [info ] [MainThread]: Running with dbt=1.11.9
+[0m22:12:48.343841 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'empty': 'False', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\Rodrigo\\Desktop\\quizz\\pratica_dbt_duckdb\\project', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'use_colors': 'True', 'indirect_selection': 'eager', 'invocation_command': 'dbt run --full-refresh', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\Rodrigo\\Desktop\\quizz\\pratica_dbt_duckdb\\project\\logs'}
+[0m22:12:48.690598 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '2ed0b4ec-1ddf-491b-9212-b64cef64f1a0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C5CC7203E0>]}
+[0m22:12:48.784278 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '2ed0b4ec-1ddf-491b-9212-b64cef64f1a0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C5CD26BF00>]}
+[0m22:12:48.787537 [info ] [MainThread]: Registered adapter: duckdb=1.10.1
+[0m22:12:49.213816 [debug] [MainThread]: checksum: f8bb6a62265c70f2530bed05e52c2cee1c1844b101d398a67d5798350ab914c5, vars: {}, profile: , target: , version: 1.11.9
+[0m22:12:49.404792 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 2 files changed.
+[0m22:12:49.405497 [debug] [MainThread]: Partial parsing: updated file: projeto_educacao://models\schema.yml
+[0m22:12:49.405932 [debug] [MainThread]: Partial parsing: updated file: projeto_educacao://models\intermediate\int_gestor_qualificacao.sql
+[0m22:12:50.041840 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '2ed0b4ec-1ddf-491b-9212-b64cef64f1a0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C5CE8D8350>]}
+[0m22:12:50.137531 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\Rodrigo\Desktop\quizz\pratica_dbt_duckdb\project\target\manifest.json
+[0m22:12:50.140796 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\Rodrigo\Desktop\quizz\pratica_dbt_duckdb\project\target\semantic_manifest.json
+[0m22:12:50.155791 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '2ed0b4ec-1ddf-491b-9212-b64cef64f1a0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C5CC2AC5F0>]}
+[0m22:12:50.156364 [info ] [MainThread]: Found 5 models, 2 data tests, 477 macros
+[0m22:12:50.156851 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '2ed0b4ec-1ddf-491b-9212-b64cef64f1a0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C5CEED5550>]}
+[0m22:12:50.159048 [info ] [MainThread]: 
+[0m22:12:50.159575 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m22:12:50.159917 [info ] [MainThread]: 
+[0m22:12:50.160441 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m22:12:50.166092 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_project_data'
+[0m22:12:50.181920 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_project_data'
+[0m22:12:50.185279 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_project_data'
+[0m22:12:50.283033 [debug] [ThreadPool]: Using duckdb connection "list_project_data"
+[0m22:12:50.283500 [debug] [ThreadPool]: Using duckdb connection "list_project_data"
+[0m22:12:50.283987 [debug] [ThreadPool]: Using duckdb connection "list_project_data"
+[0m22:12:50.284405 [debug] [ThreadPool]: On list_project_data: /* {"app": "dbt", "dbt_version": "1.11.9", "profile_name": "projeto_educacao", "target_name": "dev", "connection_name": "list_project_data"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = '"project_data"'
+    
+  
+  
+[0m22:12:50.284802 [debug] [ThreadPool]: On list_project_data: /* {"app": "dbt", "dbt_version": "1.11.9", "profile_name": "projeto_educacao", "target_name": "dev", "connection_name": "list_project_data"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = '"project_data"'
+    
+  
+  
+[0m22:12:50.285296 [debug] [ThreadPool]: On list_project_data: /* {"app": "dbt", "dbt_version": "1.11.9", "profile_name": "projeto_educacao", "target_name": "dev", "connection_name": "list_project_data"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = '"project_data"'
+    
+  
+  
+[0m22:12:50.285718 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m22:12:50.286055 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m22:12:50.286483 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m22:12:50.317799 [debug] [ThreadPool]: SQL status: OK in 0.032 seconds
+[0m22:12:50.318266 [debug] [ThreadPool]: SQL status: OK in 0.032 seconds
+[0m22:12:50.318696 [debug] [ThreadPool]: SQL status: OK in 0.032 seconds
+[0m22:12:50.320127 [debug] [ThreadPool]: On list_project_data: Close
+[0m22:12:50.321595 [debug] [ThreadPool]: On list_project_data: Close
+[0m22:12:50.323251 [debug] [ThreadPool]: On list_project_data: Close
+[0m22:12:50.324458 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_project_data, now create_project_data_main_intermediate)
+[0m22:12:50.324900 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_project_data, now create_project_data_main_staging)
+[0m22:12:50.325446 [debug] [ThreadPool]: Creating schema "database: "project_data"
+schema: "main_intermediate"
+"
+[0m22:12:50.325847 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_project_data, now create_project_data_main_serving)
+[0m22:12:50.326478 [debug] [ThreadPool]: Creating schema "database: "project_data"
+schema: "main_staging"
+"
+[0m22:12:50.333520 [debug] [ThreadPool]: Using duckdb connection "create_project_data_main_intermediate"
+[0m22:12:50.334187 [debug] [ThreadPool]: Creating schema "database: "project_data"
+schema: "main_serving"
+"
+[0m22:12:50.337242 [debug] [ThreadPool]: Using duckdb connection "create_project_data_main_staging"
+[0m22:12:50.337716 [debug] [ThreadPool]: On create_project_data_main_intermediate: /* {"app": "dbt", "dbt_version": "1.11.9", "profile_name": "projeto_educacao", "target_name": "dev", "connection_name": "create_project_data_main_intermediate"} */
+
+    
+        select type from duckdb_databases()
+        where lower(database_name)='project_data'
+        and type='sqlite'
+    
+  
+[0m22:12:50.340211 [debug] [ThreadPool]: Using duckdb connection "create_project_data_main_serving"
+[0m22:12:50.340680 [debug] [ThreadPool]: On create_project_data_main_staging: /* {"app": "dbt", "dbt_version": "1.11.9", "profile_name": "projeto_educacao", "target_name": "dev", "connection_name": "create_project_data_main_staging"} */
+
+    
+        select type from duckdb_databases()
+        where lower(database_name)='project_data'
+        and type='sqlite'
+    
+  
+[0m22:12:50.341017 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m22:12:50.341385 [debug] [ThreadPool]: On create_project_data_main_serving: /* {"app": "dbt", "dbt_version": "1.11.9", "profile_name": "projeto_educacao", "target_name": "dev", "connection_name": "create_project_data_main_serving"} */
+
+    
+        select type from duckdb_databases()
+        where lower(database_name)='project_data'
+        and type='sqlite'
+    
+  
+[0m22:12:50.341862 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m22:12:50.342390 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m22:12:50.343168 [debug] [ThreadPool]: SQL status: OK in 0.002 seconds
+[0m22:12:50.343562 [debug] [ThreadPool]: SQL status: OK in 0.002 seconds
+[0m22:12:50.343933 [debug] [ThreadPool]: SQL status: OK in 0.002 seconds
+[0m22:12:50.345177 [debug] [ThreadPool]: Using duckdb connection "create_project_data_main_intermediate"
+[0m22:12:50.346445 [debug] [ThreadPool]: Using duckdb connection "create_project_data_main_staging"
+[0m22:12:50.346771 [debug] [ThreadPool]: On create_project_data_main_intermediate: BEGIN
+[0m22:12:50.347889 [debug] [ThreadPool]: Using duckdb connection "create_project_data_main_serving"
+[0m22:12:50.348226 [debug] [ThreadPool]: On create_project_data_main_staging: BEGIN
+[0m22:12:50.348635 [debug] [ThreadPool]: On create_project_data_main_serving: BEGIN
+[0m22:12:50.349010 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m22:12:50.349345 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m22:12:50.349690 [debug] [ThreadPool]: Using duckdb connection "create_project_data_main_intermediate"
+[0m22:12:50.349993 [debug] [ThreadPool]: Using duckdb connection "create_project_data_main_staging"
+[0m22:12:50.350289 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m22:12:50.350577 [debug] [ThreadPool]: On create_project_data_main_intermediate: /* {"app": "dbt", "dbt_version": "1.11.9", "profile_name": "projeto_educacao", "target_name": "dev", "connection_name": "create_project_data_main_intermediate"} */
+
+    
+    
+        create schema if not exists "project_data"."main_intermediate"
+    
+[0m22:12:50.350891 [debug] [ThreadPool]: On create_project_data_main_staging: /* {"app": "dbt", "dbt_version": "1.11.9", "profile_name": "projeto_educacao", "target_name": "dev", "connection_name": "create_project_data_main_staging"} */
+
+    
+    
+        create schema if not exists "project_data"."main_staging"
+    
+[0m22:12:50.351197 [debug] [ThreadPool]: Using duckdb connection "create_project_data_main_serving"
+[0m22:12:50.351684 [debug] [ThreadPool]: On create_project_data_main_serving: /* {"app": "dbt", "dbt_version": "1.11.9", "profile_name": "projeto_educacao", "target_name": "dev", "connection_name": "create_project_data_main_serving"} */
+
+    
+    
+        create schema if not exists "project_data"."main_serving"
+    
+[0m22:12:50.352083 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m22:12:50.352377 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m22:12:50.352682 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m22:12:50.353562 [debug] [ThreadPool]: On create_project_data_main_intermediate: COMMIT
+[0m22:12:50.354387 [debug] [ThreadPool]: On create_project_data_main_staging: COMMIT
+[0m22:12:50.355177 [debug] [ThreadPool]: On create_project_data_main_serving: COMMIT
+[0m22:12:50.355499 [debug] [ThreadPool]: Using duckdb connection "create_project_data_main_intermediate"
+[0m22:12:50.355800 [debug] [ThreadPool]: Using duckdb connection "create_project_data_main_staging"
+[0m22:12:50.356098 [debug] [ThreadPool]: Using duckdb connection "create_project_data_main_serving"
+[0m22:12:50.356398 [debug] [ThreadPool]: On create_project_data_main_intermediate: COMMIT
+[0m22:12:50.356687 [debug] [ThreadPool]: On create_project_data_main_staging: COMMIT
+[0m22:12:50.356976 [debug] [ThreadPool]: On create_project_data_main_serving: COMMIT
+[0m22:12:50.357568 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m22:12:50.357879 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m22:12:50.358171 [debug] [ThreadPool]: On create_project_data_main_intermediate: Close
+[0m22:12:50.358442 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m22:12:50.358743 [debug] [ThreadPool]: On create_project_data_main_staging: Close
+[0m22:12:50.359294 [debug] [ThreadPool]: On create_project_data_main_serving: Close
+[0m22:12:50.361147 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_project_data_main_intermediate'
+[0m22:12:50.367165 [debug] [ThreadPool]: Using duckdb connection "list_project_data_main_intermediate"
+[0m22:12:50.367767 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_project_data_main_staging'
+[0m22:12:50.368399 [debug] [ThreadPool]: On list_project_data_main_intermediate: BEGIN
+[0m22:12:50.368916 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_project_data_main_serving'
+[0m22:12:50.372027 [debug] [ThreadPool]: Using duckdb connection "list_project_data_main_staging"
+[0m22:12:50.372529 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m22:12:50.374934 [debug] [ThreadPool]: Using duckdb connection "list_project_data_main_serving"
+[0m22:12:50.375363 [debug] [ThreadPool]: On list_project_data_main_staging: BEGIN
+[0m22:12:50.375944 [debug] [ThreadPool]: On list_project_data_main_serving: BEGIN
+[0m22:12:50.376315 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m22:12:50.376688 [debug] [ThreadPool]: SQL status: OK in 0.004 seconds
+[0m22:12:50.377010 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m22:12:50.377510 [debug] [ThreadPool]: Using duckdb connection "list_project_data_main_intermediate"
+[0m22:12:50.377995 [debug] [ThreadPool]: SQL status: OK in 0.002 seconds
+[0m22:12:50.378439 [debug] [ThreadPool]: On list_project_data_main_intermediate: /* {"app": "dbt", "dbt_version": "1.11.9", "profile_name": "projeto_educacao", "target_name": "dev", "connection_name": "list_project_data_main_intermediate"} */
+select
+      'project_data' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'main_intermediate'
+    and lower(table_catalog) = 'project_data'
+  
+[0m22:12:50.378823 [debug] [ThreadPool]: SQL status: OK in 0.002 seconds
+[0m22:12:50.379138 [debug] [ThreadPool]: Using duckdb connection "list_project_data_main_staging"
+[0m22:12:50.379668 [debug] [ThreadPool]: Using duckdb connection "list_project_data_main_serving"
+[0m22:12:50.379993 [debug] [ThreadPool]: On list_project_data_main_staging: /* {"app": "dbt", "dbt_version": "1.11.9", "profile_name": "projeto_educacao", "target_name": "dev", "connection_name": "list_project_data_main_staging"} */
+select
+      'project_data' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'main_staging'
+    and lower(table_catalog) = 'project_data'
+  
+[0m22:12:50.380348 [debug] [ThreadPool]: On list_project_data_main_serving: /* {"app": "dbt", "dbt_version": "1.11.9", "profile_name": "projeto_educacao", "target_name": "dev", "connection_name": "list_project_data_main_serving"} */
+select
+      'project_data' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'main_serving'
+    and lower(table_catalog) = 'project_data'
+  
+[0m22:12:50.385011 [debug] [ThreadPool]: SQL status: OK in 0.005 seconds
+[0m22:12:50.385431 [debug] [ThreadPool]: SQL status: OK in 0.005 seconds
+[0m22:12:50.385732 [debug] [ThreadPool]: SQL status: OK in 0.005 seconds
+[0m22:12:50.387147 [debug] [ThreadPool]: On list_project_data_main_intermediate: ROLLBACK
+[0m22:12:50.388260 [debug] [ThreadPool]: On list_project_data_main_staging: ROLLBACK
+[0m22:12:50.389298 [debug] [ThreadPool]: On list_project_data_main_serving: ROLLBACK
+[0m22:12:50.391505 [debug] [ThreadPool]: Failed to rollback 'list_project_data_main_intermediate'
+[0m22:12:50.391954 [debug] [ThreadPool]: On list_project_data_main_intermediate: Close
+[0m22:12:50.393387 [debug] [ThreadPool]: Failed to rollback 'list_project_data_main_staging'
+[0m22:12:50.393760 [debug] [ThreadPool]: On list_project_data_main_staging: Close
+[0m22:12:50.395252 [debug] [ThreadPool]: Failed to rollback 'list_project_data_main_serving'
+[0m22:12:50.395579 [debug] [ThreadPool]: On list_project_data_main_serving: Close
+[0m22:12:50.396363 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '2ed0b4ec-1ddf-491b-9212-b64cef64f1a0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C5CF2BC940>]}
+[0m22:12:50.397071 [debug] [MainThread]: Using duckdb connection "master"
+[0m22:12:50.397523 [debug] [MainThread]: On master: BEGIN
+[0m22:12:50.397936 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m22:12:50.398828 [debug] [MainThread]: SQL status: OK in 0.001 seconds
+[0m22:12:50.399250 [debug] [MainThread]: On master: COMMIT
+[0m22:12:50.399615 [debug] [MainThread]: Using duckdb connection "master"
+[0m22:12:50.399959 [debug] [MainThread]: On master: COMMIT
+[0m22:12:50.400519 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m22:12:50.400829 [debug] [MainThread]: On master: Close
+[0m22:12:50.405235 [debug] [Thread-1 (]: Began running node model.projeto_educacao.stg_gestor_escolar
+[0m22:12:50.405783 [debug] [Thread-2 (]: Began running node model.projeto_educacao.stg_ied_escolas
+[0m22:12:50.406404 [info ] [Thread-1 (]: 1 of 5 START sql view model main_staging.stg_gestor_escolar .................... [RUN]
+[0m22:12:50.407463 [debug] [Thread-1 (]: Acquiring new duckdb connection 'model.projeto_educacao.stg_gestor_escolar'
+[0m22:12:50.406862 [info ] [Thread-2 (]: 2 of 5 START sql view model main_staging.stg_ied_escolas ....................... [RUN]
+[0m22:12:50.407932 [debug] [Thread-1 (]: Began compiling node model.projeto_educacao.stg_gestor_escolar
+[0m22:12:50.408408 [debug] [Thread-2 (]: Acquiring new duckdb connection 'model.projeto_educacao.stg_ied_escolas'
+[0m22:12:50.415866 [debug] [Thread-1 (]: Writing injected SQL for node "model.projeto_educacao.stg_gestor_escolar"
+[0m22:12:50.416385 [debug] [Thread-2 (]: Began compiling node model.projeto_educacao.stg_ied_escolas
+[0m22:12:50.418198 [debug] [Thread-2 (]: Writing injected SQL for node "model.projeto_educacao.stg_ied_escolas"
+[0m22:12:50.419480 [debug] [Thread-1 (]: Began executing node model.projeto_educacao.stg_gestor_escolar
+[0m22:12:50.426755 [debug] [Thread-2 (]: Began executing node model.projeto_educacao.stg_ied_escolas
+[0m22:12:50.456267 [debug] [Thread-1 (]: Writing runtime sql for node "model.projeto_educacao.stg_gestor_escolar"
+[0m22:12:50.460829 [debug] [Thread-2 (]: Writing runtime sql for node "model.projeto_educacao.stg_ied_escolas"
+[0m22:12:50.462528 [debug] [Thread-1 (]: Using duckdb connection "model.projeto_educacao.stg_gestor_escolar"
+[0m22:12:50.463236 [debug] [Thread-1 (]: On model.projeto_educacao.stg_gestor_escolar: BEGIN
+[0m22:12:50.463940 [debug] [Thread-2 (]: Using duckdb connection "model.projeto_educacao.stg_ied_escolas"
+[0m22:12:50.464462 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m22:12:50.464863 [debug] [Thread-2 (]: On model.projeto_educacao.stg_ied_escolas: BEGIN
+[0m22:12:50.465702 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m22:12:50.466206 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m22:12:50.466603 [debug] [Thread-1 (]: Using duckdb connection "model.projeto_educacao.stg_gestor_escolar"
+[0m22:12:50.466960 [debug] [Thread-2 (]: SQL status: OK in 0.001 seconds
+[0m22:12:50.467357 [debug] [Thread-1 (]: On model.projeto_educacao.stg_gestor_escolar: /* {"app": "dbt", "dbt_version": "1.11.9", "profile_name": "projeto_educacao", "target_name": "dev", "node_id": "model.projeto_educacao.stg_gestor_escolar"} */
+
+  
+  create view "project_data"."main_staging"."stg_gestor_escolar__dbt_tmp" as (
+    SELECT
+    CAST(nu_ano_censo AS INTEGER) AS nu_ano_censo,
+
+    CAST(co_entidade AS BIGINT) AS co_entidade,
+
+    CAST(qt_gest_bas AS INTEGER) AS qt_gest_bas,
+
+    CAST(qt_gest_bas_esco_sup_grad AS INTEGER)
+        AS qt_gest_bas_esco_sup_grad,
+
+    CAST(qt_gest_bas_esco_sup_pos_espec AS INTEGER)
+        AS qt_gest_bas_esco_sup_pos_espec,
+
+    CAST(qt_gest_bas_esco_sup_pos_mestra AS INTEGER)
+        AS qt_gest_bas_esco_sup_pos_mestra,
+
+    CAST(qt_gest_bas_esco_sup_pos_douto AS INTEGER)
+        AS qt_gest_bas_esco_sup_pos_douto,
+
+    CAST(qt_gest_bas_diretor AS INTEGER)
+        AS qt_gest_bas_diretor,
+
+    CAST(qt_gest_bas_acesso_cargo_conc AS INTEGER)
+        AS qt_gest_bas_acesso_cargo_conc,
+
+    CAST(qt_gest_bas_acesso_cargo_indic AS INTEGER)
+        AS qt_gest_bas_acesso_cargo_indic
+
+FROM raw.tabela_gestor_escolar_2025
+  );
+
+[0m22:12:50.467789 [debug] [Thread-2 (]: Using duckdb connection "model.projeto_educacao.stg_ied_escolas"
+[0m22:12:50.468396 [debug] [Thread-2 (]: On model.projeto_educacao.stg_ied_escolas: /* {"app": "dbt", "dbt_version": "1.11.9", "profile_name": "projeto_educacao", "target_name": "dev", "node_id": "model.projeto_educacao.stg_ied_escolas"} */
+
+  
+  create view "project_data"."main_staging"."stg_ied_escolas__dbt_tmp" as (
+    SELECT
+    CAST(nu_ano_censo AS INTEGER) AS nu_ano_censo,
+
+    CAST(co_entidade AS BIGINT) AS co_entidade,
+
+    sg_uf,
+    no_municipio,
+    no_entidade,
+
+    CAST(NULLIF(fun_cat_1, '--') AS DOUBLE) AS fun_cat_1,
+    CAST(NULLIF(fun_cat_2, '--') AS DOUBLE) AS fun_cat_2,
+    CAST(NULLIF(fun_cat_3, '--') AS DOUBLE) AS fun_cat_3,
+    CAST(NULLIF(fun_cat_4, '--') AS DOUBLE) AS fun_cat_4,
+    CAST(NULLIF(fun_cat_5, '--') AS DOUBLE) AS fun_cat_5,
+    CAST(NULLIF(fun_cat_6, '--') AS DOUBLE) AS fun_cat_6
+
+FROM raw.ied_escolas_2025
+
+WHERE sg_uf = 'RJ'
+  );
+
+[0m22:12:50.469069 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m22:12:50.475908 [debug] [Thread-1 (]: Using duckdb connection "model.projeto_educacao.stg_gestor_escolar"
+[0m22:12:50.476367 [debug] [Thread-2 (]: SQL status: OK in 0.008 seconds
+[0m22:12:50.476793 [debug] [Thread-1 (]: On model.projeto_educacao.stg_gestor_escolar: /* {"app": "dbt", "dbt_version": "1.11.9", "profile_name": "projeto_educacao", "target_name": "dev", "node_id": "model.projeto_educacao.stg_gestor_escolar"} */
+alter view "project_data"."main_staging"."stg_gestor_escolar" rename to "stg_gestor_escolar__dbt_backup"
+[0m22:12:50.480463 [debug] [Thread-2 (]: Using duckdb connection "model.projeto_educacao.stg_ied_escolas"
+[0m22:12:50.481070 [debug] [Thread-2 (]: On model.projeto_educacao.stg_ied_escolas: /* {"app": "dbt", "dbt_version": "1.11.9", "profile_name": "projeto_educacao", "target_name": "dev", "node_id": "model.projeto_educacao.stg_ied_escolas"} */
+alter view "project_data"."main_staging"."stg_ied_escolas" rename to "stg_ied_escolas__dbt_backup"
+[0m22:12:50.481512 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m22:12:50.484607 [debug] [Thread-1 (]: Using duckdb connection "model.projeto_educacao.stg_gestor_escolar"
+[0m22:12:50.485055 [debug] [Thread-2 (]: SQL status: OK in 0.004 seconds
+[0m22:12:50.485420 [debug] [Thread-1 (]: On model.projeto_educacao.stg_gestor_escolar: /* {"app": "dbt", "dbt_version": "1.11.9", "profile_name": "projeto_educacao", "target_name": "dev", "node_id": "model.projeto_educacao.stg_gestor_escolar"} */
+alter view "project_data"."main_staging"."stg_gestor_escolar__dbt_tmp" rename to "stg_gestor_escolar"
+[0m22:12:50.488301 [debug] [Thread-2 (]: Using duckdb connection "model.projeto_educacao.stg_ied_escolas"
+[0m22:12:50.488977 [debug] [Thread-2 (]: On model.projeto_educacao.stg_ied_escolas: /* {"app": "dbt", "dbt_version": "1.11.9", "profile_name": "projeto_educacao", "target_name": "dev", "node_id": "model.projeto_educacao.stg_ied_escolas"} */
+alter view "project_data"."main_staging"."stg_ied_escolas__dbt_tmp" rename to "stg_ied_escolas"
+[0m22:12:50.489421 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m22:12:50.505495 [debug] [Thread-1 (]: On model.projeto_educacao.stg_gestor_escolar: COMMIT
+[0m22:12:50.506047 [debug] [Thread-1 (]: Using duckdb connection "model.projeto_educacao.stg_gestor_escolar"
+[0m22:12:50.506436 [debug] [Thread-2 (]: SQL status: OK in 0.017 seconds
+[0m22:12:50.506799 [debug] [Thread-1 (]: On model.projeto_educacao.stg_gestor_escolar: COMMIT
+[0m22:12:50.508384 [debug] [Thread-2 (]: On model.projeto_educacao.stg_ied_escolas: COMMIT
+[0m22:12:50.508940 [debug] [Thread-2 (]: Using duckdb connection "model.projeto_educacao.stg_ied_escolas"
+[0m22:12:50.509352 [debug] [Thread-2 (]: On model.projeto_educacao.stg_ied_escolas: COMMIT
+[0m22:12:50.512768 [debug] [Thread-1 (]: SQL status: OK in 0.004 seconds
+[0m22:12:50.519653 [debug] [Thread-1 (]: Using duckdb connection "model.projeto_educacao.stg_gestor_escolar"
+[0m22:12:50.520146 [debug] [Thread-1 (]: On model.projeto_educacao.stg_gestor_escolar: /* {"app": "dbt", "dbt_version": "1.11.9", "profile_name": "projeto_educacao", "target_name": "dev", "node_id": "model.projeto_educacao.stg_gestor_escolar"} */
+
+      drop view if exists "project_data"."main_staging"."stg_gestor_escolar__dbt_backup" cascade
+    
+[0m22:12:50.520570 [debug] [Thread-2 (]: SQL status: OK in 0.011 seconds
+[0m22:12:50.524063 [debug] [Thread-2 (]: Using duckdb connection "model.projeto_educacao.stg_ied_escolas"
+[0m22:12:50.524636 [debug] [Thread-2 (]: On model.projeto_educacao.stg_ied_escolas: /* {"app": "dbt", "dbt_version": "1.11.9", "profile_name": "projeto_educacao", "target_name": "dev", "node_id": "model.projeto_educacao.stg_ied_escolas"} */
+
+      drop view if exists "project_data"."main_staging"."stg_ied_escolas__dbt_backup" cascade
+    
+[0m22:12:50.526654 [debug] [Thread-1 (]: SQL status: OK in 0.006 seconds
+[0m22:12:50.530340 [debug] [Thread-1 (]: On model.projeto_educacao.stg_gestor_escolar: Close
+[0m22:12:50.530819 [debug] [Thread-2 (]: SQL status: OK in 0.006 seconds
+[0m22:12:50.532282 [debug] [Thread-2 (]: On model.projeto_educacao.stg_ied_escolas: Close
+[0m22:12:50.534782 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '2ed0b4ec-1ddf-491b-9212-b64cef64f1a0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C5CEF03590>]}
+[0m22:12:50.535194 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '2ed0b4ec-1ddf-491b-9212-b64cef64f1a0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C5CEF36BA0>]}
+[0m22:12:50.535903 [info ] [Thread-1 (]: 1 of 5 OK created sql view model main_staging.stg_gestor_escolar ............... [[32mOK[0m in 0.13s]
+[0m22:12:50.537260 [debug] [Thread-1 (]: Finished running node model.projeto_educacao.stg_gestor_escolar
+[0m22:12:50.536479 [info ] [Thread-2 (]: 2 of 5 OK created sql view model main_staging.stg_ied_escolas .................. [[32mOK[0m in 0.13s]
+[0m22:12:50.538155 [debug] [Thread-2 (]: Finished running node model.projeto_educacao.stg_ied_escolas
+[0m22:12:50.538877 [debug] [Thread-4 (]: Began running node model.projeto_educacao.int_professor_esforco_rj
+[0m22:12:50.539493 [debug] [Thread-3 (]: Began running node model.projeto_educacao.int_gestor_qualificacao
+[0m22:12:50.540223 [info ] [Thread-4 (]: 4 of 5 START sql view model main_intermediate.int_professor_esforco_rj ......... [RUN]
+[0m22:12:50.541083 [info ] [Thread-3 (]: 3 of 5 START sql view model main_intermediate.int_gestor_qualificacao .......... [RUN]
+[0m22:12:50.541919 [debug] [Thread-4 (]: Acquiring new duckdb connection 'model.projeto_educacao.int_professor_esforco_rj'
+[0m22:12:50.542611 [debug] [Thread-3 (]: Acquiring new duckdb connection 'model.projeto_educacao.int_gestor_qualificacao'
+[0m22:12:50.543169 [debug] [Thread-4 (]: Began compiling node model.projeto_educacao.int_professor_esforco_rj
+[0m22:12:50.543710 [debug] [Thread-3 (]: Began compiling node model.projeto_educacao.int_gestor_qualificacao
+[0m22:12:50.547636 [debug] [Thread-4 (]: Writing injected SQL for node "model.projeto_educacao.int_professor_esforco_rj"
+[0m22:12:50.551952 [debug] [Thread-3 (]: Writing injected SQL for node "model.projeto_educacao.int_gestor_qualificacao"
+[0m22:12:50.553573 [debug] [Thread-4 (]: Began executing node model.projeto_educacao.int_professor_esforco_rj
+[0m22:12:50.557592 [debug] [Thread-4 (]: Writing runtime sql for node "model.projeto_educacao.int_professor_esforco_rj"
+[0m22:12:50.558069 [debug] [Thread-3 (]: Began executing node model.projeto_educacao.int_gestor_qualificacao
+[0m22:12:50.561381 [debug] [Thread-3 (]: Writing runtime sql for node "model.projeto_educacao.int_gestor_qualificacao"
+[0m22:12:50.562598 [debug] [Thread-4 (]: Using duckdb connection "model.projeto_educacao.int_professor_esforco_rj"
+[0m22:12:50.563213 [debug] [Thread-4 (]: On model.projeto_educacao.int_professor_esforco_rj: BEGIN
+[0m22:12:50.563750 [debug] [Thread-3 (]: Using duckdb connection "model.projeto_educacao.int_gestor_qualificacao"
+[0m22:12:50.564158 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m22:12:50.564537 [debug] [Thread-3 (]: On model.projeto_educacao.int_gestor_qualificacao: BEGIN
+[0m22:12:50.565087 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m22:12:50.565715 [debug] [Thread-4 (]: SQL status: OK in 0.001 seconds
+[0m22:12:50.566200 [debug] [Thread-3 (]: SQL status: OK in 0.001 seconds
+[0m22:12:50.566572 [debug] [Thread-4 (]: Using duckdb connection "model.projeto_educacao.int_professor_esforco_rj"
+[0m22:12:50.566943 [debug] [Thread-3 (]: Using duckdb connection "model.projeto_educacao.int_gestor_qualificacao"
+[0m22:12:50.567386 [debug] [Thread-4 (]: On model.projeto_educacao.int_professor_esforco_rj: /* {"app": "dbt", "dbt_version": "1.11.9", "profile_name": "projeto_educacao", "target_name": "dev", "node_id": "model.projeto_educacao.int_professor_esforco_rj"} */
+
+  
+  create view "project_data"."main_intermediate"."int_professor_esforco_rj__dbt_tmp" as (
+    -- int_professor_esforco_rj.sql
+with source as (
+    select * from "project_data"."main_staging"."stg_ied_escolas"
+    where sg_uf = 'RJ'
+),
+
+calculo_total as (
+    select
+        *,
+        -- Soma de todas as categorias para ter o denominador
+        (coalesce(fun_cat_1, 0) + coalesce(fun_cat_2, 0) + coalesce(fun_cat_3, 0) + 
+         coalesce(fun_cat_4, 0) + coalesce(fun_cat_5, 0) + coalesce(fun_cat_6, 0)) as total_docentes
+    from source
+),
+
+ied_calculado as (
+    select
+        co_entidade,
+        nu_ano_censo,
+        no_entidade,
+        no_municipio,
+        total_docentes,
+        -- Média ponderada: (Qtd na Categoria * Peso da Categoria) / Total
+        case 
+            when total_docentes = 0 then null
+            else round(
+                cast(
+                    (fun_cat_1 * 1.0) + (fun_cat_2 * 2.0) + (fun_cat_3 * 3.0) + 
+                    (fun_cat_4 * 4.0) + (fun_cat_5 * 5.0) + (fun_cat_6 * 6.0)
+                as double) / total_docentes, 2
+            )
+        end as ied
+    from calculo_total
+)
+
+select * from ied_calculado
+  );
+
+[0m22:12:50.567908 [debug] [Thread-3 (]: On model.projeto_educacao.int_gestor_qualificacao: /* {"app": "dbt", "dbt_version": "1.11.9", "profile_name": "projeto_educacao", "target_name": "dev", "node_id": "model.projeto_educacao.int_gestor_qualificacao"} */
+
+  
+  create view "project_data"."main_intermediate"."int_gestor_qualificacao__dbt_tmp" as (
+    -- int_gestor_qualificacao.sql
+
+with stg_gestor as (
+    select * from "project_data"."main_staging"."stg_gestor_escolar"
+),
+
+stg_escolas_rj as (
+    -- Usamos a staging de escolas apenas para filtrar o estado
+    select co_entidade from "project_data"."main_staging"."stg_ied_escolas"
+    where sg_uf = 'RJ'
+),
+
+filtrado_rj as (
+    select g.* 
+    from stg_gestor g
+    inner join stg_escolas_rj e on g.co_entidade = e.co_entidade
+),
+
+metricas as (
+    select
+        co_entidade,
+        nu_ano_censo,
+        qt_gest_bas as total_gestores,
+        -- Índice de Qualificação Acadêmica (IQA)
+        -- Pesos: Graduação(1), Especialização(2), Mestrado(3), Doutorado(4)
+        case 
+            when total_gestores = 0 then null
+            else round(
+                cast(
+                    (qt_graduado * 1) + 
+                    (qt_pos_especialista * 2) + 
+                    (qt_pos_mestre * 3) + 
+                    (qt_pos_doutor * 4) 
+                as double) / (4.0 * total_gestores), 4
+            )
+        end as idx_qualificacao_academica,
+
+        -- Proporção de Acesso Técnico (Concurso/Seleção/Eleição)
+        case 
+            when total_gestores = 0 then null
+            else round(cast(qt_acesso_tecnico as double) / total_gestores, 4)
+        end as prop_acesso_tecnico
+    from filtrado_rj
+)
+
+select 
+    *,
+    -- Score Composto: Média entre formação e forma de acesso
+    round((idx_qualificacao_academica + prop_acesso_tecnico) / 2.0, 4) as score_qualificacao_gestor
+from metricas
+  );
+
+[0m22:12:50.570735 [debug] [Thread-4 (]: SQL status: OK in 0.002 seconds
+[0m22:12:50.574198 [debug] [Thread-4 (]: Using duckdb connection "model.projeto_educacao.int_professor_esforco_rj"
+[0m22:12:50.574782 [debug] [Thread-3 (]: DuckDB adapter: duckdb error: Binder Error: Referenced column "qt_graduado" not found in FROM clause!
+Candidate bindings: "qt_gest_bas_diretor", "qt_gest_bas", "qt_gest_bas_acesso_cargo_conc", "qt_gest_bas_acesso_cargo_indic", "qt_gest_bas_esco_sup_grad"
+
+LINE 34:                     (qt_graduado * 1) + 
+                              ^
+[0m22:12:50.575229 [debug] [Thread-4 (]: On model.projeto_educacao.int_professor_esforco_rj: /* {"app": "dbt", "dbt_version": "1.11.9", "profile_name": "projeto_educacao", "target_name": "dev", "node_id": "model.projeto_educacao.int_professor_esforco_rj"} */
+alter view "project_data"."main_intermediate"."int_professor_esforco_rj" rename to "int_professor_esforco_rj__dbt_backup"
+[0m22:12:50.575723 [debug] [Thread-3 (]: DuckDB adapter: Error running SQL: /* {"app": "dbt", "dbt_version": "1.11.9", "profile_name": "projeto_educacao", "target_name": "dev", "node_id": "model.projeto_educacao.int_gestor_qualificacao"} */
+
+  
+  create view "project_data"."main_intermediate"."int_gestor_qualificacao__dbt_tmp" as (
+    -- int_gestor_qualificacao.sql
+
+with stg_gestor as (
+    select * from "project_data"."main_staging"."stg_gestor_escolar"
+),
+
+stg_escolas_rj as (
+    -- Usamos a staging de escolas apenas para filtrar o estado
+    select co_entidade from "project_data"."main_staging"."stg_ied_escolas"
+    where sg_uf = 'RJ'
+),
+
+filtrado_rj as (
+    select g.* 
+    from stg_gestor g
+    inner join stg_escolas_rj e on g.co_entidade = e.co_entidade
+),
+
+metricas as (
+    select
+        co_entidade,
+        nu_ano_censo,
+        qt_gest_bas as total_gestores,
+        -- Índice de Qualificação Acadêmica (IQA)
+        -- Pesos: Graduação(1), Especialização(2), Mestrado(3), Doutorado(4)
+        case 
+            when total_gestores = 0 then null
+            else round(
+                cast(
+                    (qt_graduado * 1) + 
+                    (qt_pos_especialista * 2) + 
+                    (qt_pos_mestre * 3) + 
+                    (qt_pos_doutor * 4) 
+                as double) / (4.0 * total_gestores), 4
+            )
+        end as idx_qualificacao_academica,
+
+        -- Proporção de Acesso Técnico (Concurso/Seleção/Eleição)
+        case 
+            when total_gestores = 0 then null
+            else round(cast(qt_acesso_tecnico as double) / total_gestores, 4)
+        end as prop_acesso_tecnico
+    from filtrado_rj
+)
+
+select 
+    *,
+    -- Score Composto: Média entre formação e forma de acesso
+    round((idx_qualificacao_academica + prop_acesso_tecnico) / 2.0, 4) as score_qualificacao_gestor
+from metricas
+  );
+
+[0m22:12:50.576312 [debug] [Thread-3 (]: DuckDB adapter: Rolling back transaction.
+[0m22:12:50.576721 [debug] [Thread-3 (]: On model.projeto_educacao.int_gestor_qualificacao: ROLLBACK
+[0m22:12:50.577096 [debug] [Thread-4 (]: SQL status: OK in 0.001 seconds
+[0m22:12:50.580134 [debug] [Thread-4 (]: Using duckdb connection "model.projeto_educacao.int_professor_esforco_rj"
+[0m22:12:50.580685 [debug] [Thread-4 (]: On model.projeto_educacao.int_professor_esforco_rj: /* {"app": "dbt", "dbt_version": "1.11.9", "profile_name": "projeto_educacao", "target_name": "dev", "node_id": "model.projeto_educacao.int_professor_esforco_rj"} */
+alter view "project_data"."main_intermediate"."int_professor_esforco_rj__dbt_tmp" rename to "int_professor_esforco_rj"
+[0m22:12:50.581673 [debug] [Thread-4 (]: SQL status: OK in 0.000 seconds
+[0m22:12:50.583419 [debug] [Thread-4 (]: On model.projeto_educacao.int_professor_esforco_rj: COMMIT
+[0m22:12:50.584000 [debug] [Thread-4 (]: Using duckdb connection "model.projeto_educacao.int_professor_esforco_rj"
+[0m22:12:50.584379 [debug] [Thread-4 (]: On model.projeto_educacao.int_professor_esforco_rj: COMMIT
+[0m22:12:50.586468 [debug] [Thread-3 (]: Failed to rollback 'model.projeto_educacao.int_gestor_qualificacao'
+[0m22:12:50.587076 [debug] [Thread-3 (]: On model.projeto_educacao.int_gestor_qualificacao: Close
+[0m22:12:50.587525 [debug] [Thread-4 (]: SQL status: OK in 0.003 seconds
+[0m22:12:50.590688 [debug] [Thread-4 (]: Using duckdb connection "model.projeto_educacao.int_professor_esforco_rj"
+[0m22:12:50.591137 [debug] [Thread-4 (]: On model.projeto_educacao.int_professor_esforco_rj: /* {"app": "dbt", "dbt_version": "1.11.9", "profile_name": "projeto_educacao", "target_name": "dev", "node_id": "model.projeto_educacao.int_professor_esforco_rj"} */
+
+      drop view if exists "project_data"."main_intermediate"."int_professor_esforco_rj__dbt_backup" cascade
+    
+[0m22:12:50.594461 [debug] [Thread-4 (]: SQL status: OK in 0.003 seconds
+[0m22:12:50.595982 [debug] [Thread-4 (]: On model.projeto_educacao.int_professor_esforco_rj: Close
+[0m22:12:50.599119 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '2ed0b4ec-1ddf-491b-9212-b64cef64f1a0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C5D0402850>]}
+[0m22:12:50.600020 [debug] [Thread-3 (]: Runtime Error in model int_gestor_qualificacao (models\intermediate\int_gestor_qualificacao.sql)
+  Binder Error: Referenced column "qt_graduado" not found in FROM clause!
+  Candidate bindings: "qt_gest_bas_diretor", "qt_gest_bas", "qt_gest_bas_acesso_cargo_conc", "qt_gest_bas_acesso_cargo_indic", "qt_gest_bas_esco_sup_grad"
+  
+  LINE 34:                     (qt_graduado * 1) + 
+                                ^
+[0m22:12:50.601146 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '2ed0b4ec-1ddf-491b-9212-b64cef64f1a0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C5D0409DD0>]}
+[0m22:12:50.600712 [info ] [Thread-4 (]: 4 of 5 OK created sql view model main_intermediate.int_professor_esforco_rj .... [[32mOK[0m in 0.06s]
+[0m22:12:50.603105 [debug] [Thread-4 (]: Finished running node model.projeto_educacao.int_professor_esforco_rj
+[0m22:12:50.602413 [error] [Thread-3 (]: 3 of 5 ERROR creating sql view model main_intermediate.int_gestor_qualificacao . [[31mERROR[0m in 0.06s]
+[0m22:12:50.604127 [debug] [Thread-3 (]: Finished running node model.projeto_educacao.int_gestor_qualificacao
+[0m22:12:50.604823 [debug] [Thread-7 (]: Marking all children of 'model.projeto_educacao.int_gestor_qualificacao' to be skipped because of status 'error'.  Reason: Runtime Error in model int_gestor_qualificacao (models\intermediate\int_gestor_qualificacao.sql)
+  Binder Error: Referenced column "qt_graduado" not found in FROM clause!
+  Candidate bindings: "qt_gest_bas_diretor", "qt_gest_bas", "qt_gest_bas_acesso_cargo_conc", "qt_gest_bas_acesso_cargo_indic", "qt_gest_bas_esco_sup_grad"
+  
+  LINE 34:                     (qt_graduado * 1) + 
+                                ^.
+[0m22:12:50.606144 [debug] [Thread-1 (]: Began running node model.projeto_educacao.srv_hipotese_gestor_esforco_rj
+[0m22:12:50.606919 [info ] [Thread-1 (]: 5 of 5 SKIP relation main_serving.srv_hipotese_gestor_esforco_rj ............... [[33mSKIP[0m]
+[0m22:12:50.607761 [debug] [Thread-1 (]: Finished running node model.projeto_educacao.srv_hipotese_gestor_esforco_rj
+[0m22:12:50.609325 [debug] [MainThread]: Using duckdb connection "master"
+[0m22:12:50.609853 [debug] [MainThread]: On master: BEGIN
+[0m22:12:50.610276 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m22:12:50.611081 [debug] [MainThread]: SQL status: OK in 0.001 seconds
+[0m22:12:50.611534 [debug] [MainThread]: On master: COMMIT
+[0m22:12:50.611961 [debug] [MainThread]: Using duckdb connection "master"
+[0m22:12:50.612377 [debug] [MainThread]: On master: COMMIT
+[0m22:12:50.613035 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m22:12:50.613487 [debug] [MainThread]: On master: Close
+[0m22:12:50.614011 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m22:12:50.614433 [debug] [MainThread]: Connection 'create_project_data_main_intermediate' was properly closed.
+[0m22:12:50.614767 [debug] [MainThread]: Connection 'create_project_data_main_staging' was properly closed.
+[0m22:12:50.615084 [debug] [MainThread]: Connection 'create_project_data_main_serving' was properly closed.
+[0m22:12:50.615343 [debug] [MainThread]: Connection 'list_project_data_main_intermediate' was properly closed.
+[0m22:12:50.615597 [debug] [MainThread]: Connection 'list_project_data_main_staging' was properly closed.
+[0m22:12:50.615850 [debug] [MainThread]: Connection 'list_project_data_main_serving' was properly closed.
+[0m22:12:50.616102 [debug] [MainThread]: Connection 'model.projeto_educacao.stg_gestor_escolar' was properly closed.
+[0m22:12:50.616357 [debug] [MainThread]: Connection 'model.projeto_educacao.stg_ied_escolas' was properly closed.
+[0m22:12:50.616610 [debug] [MainThread]: Connection 'model.projeto_educacao.int_professor_esforco_rj' was properly closed.
+[0m22:12:50.616862 [debug] [MainThread]: Connection 'model.projeto_educacao.int_gestor_qualificacao' was properly closed.
+[0m22:12:50.617273 [info ] [MainThread]: 
+[0m22:12:50.617815 [info ] [MainThread]: Finished running 1 table model, 4 view models in 0 hours 0 minutes and 0.46 seconds (0.46s).
+[0m22:12:50.619453 [debug] [MainThread]: Command end result
+[0m22:12:50.659463 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\Rodrigo\Desktop\quizz\pratica_dbt_duckdb\project\target\manifest.json
+[0m22:12:50.662700 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\Rodrigo\Desktop\quizz\pratica_dbt_duckdb\project\target\semantic_manifest.json
+[0m22:12:50.670005 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\Rodrigo\Desktop\quizz\pratica_dbt_duckdb\project\target\run_results.json
+[0m22:12:50.670560 [info ] [MainThread]: 
+[0m22:12:50.671153 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m22:12:50.671693 [info ] [MainThread]: 
+[0m22:12:50.672318 [error] [MainThread]: [31mFailure in model int_gestor_qualificacao (models\intermediate\int_gestor_qualificacao.sql)[0m
+[0m22:12:50.672969 [error] [MainThread]:   Runtime Error in model int_gestor_qualificacao (models\intermediate\int_gestor_qualificacao.sql)
+  Binder Error: Referenced column "qt_graduado" not found in FROM clause!
+  Candidate bindings: "qt_gest_bas_diretor", "qt_gest_bas", "qt_gest_bas_acesso_cargo_conc", "qt_gest_bas_acesso_cargo_indic", "qt_gest_bas_esco_sup_grad"
+  
+  LINE 34:                     (qt_graduado * 1) + 
+                                ^
+[0m22:12:50.673548 [info ] [MainThread]: 
+[0m22:12:50.674561 [info ] [MainThread]:   compiled code at target\compiled\projeto_educacao\models\intermediate\int_gestor_qualificacao.sql
+[0m22:12:50.675004 [info ] [MainThread]: 
+[0m22:12:50.675493 [info ] [MainThread]: Done. PASS=3 WARN=0 ERROR=1 SKIP=1 NO-OP=0 TOTAL=5
+[0m22:12:50.676955 [debug] [MainThread]: Command `dbt run` failed at 22:12:50.676778 after 2.53 seconds
+[0m22:12:50.677411 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C5CE484E50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C5C68AE6D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C5CE3EE150>]}
+[0m22:12:50.677781 [debug] [MainThread]: Flushing usage events
+[0m22:12:51.615542 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m22:15:28.320452 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000201A6F8F8C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000201A923BC50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000201A923BB10>]}
+
+
+============================== 22:15:28.325643 | ecbf79e4-e9f3-4dd6-86cc-48c22233e66a ==============================
+[0m22:15:28.325643 [info ] [MainThread]: Running with dbt=1.11.9
+[0m22:15:28.326310 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'empty': 'False', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\Rodrigo\\Desktop\\quizz\\pratica_dbt_duckdb\\project', 'use_colors': 'True', 'indirect_selection': 'eager', 'invocation_command': 'dbt run --full-refresh', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\Rodrigo\\Desktop\\quizz\\pratica_dbt_duckdb\\project\\logs'}
+[0m22:15:28.660620 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'ecbf79e4-e9f3-4dd6-86cc-48c22233e66a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000201A75503E0>]}
+[0m22:15:28.757987 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'ecbf79e4-e9f3-4dd6-86cc-48c22233e66a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000201A8097F00>]}
+[0m22:15:28.761229 [info ] [MainThread]: Registered adapter: duckdb=1.10.1
+[0m22:15:29.186343 [debug] [MainThread]: checksum: f8bb6a62265c70f2530bed05e52c2cee1c1844b101d398a67d5798350ab914c5, vars: {}, profile: , target: , version: 1.11.9
+[0m22:15:29.369667 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m22:15:29.370341 [debug] [MainThread]: Partial parsing: updated file: projeto_educacao://models\staging\stg_gestor_escolar.sql
+[0m22:15:29.785505 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'ecbf79e4-e9f3-4dd6-86cc-48c22233e66a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000201A97FC950>]}
+[0m22:15:29.882098 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\Rodrigo\Desktop\quizz\pratica_dbt_duckdb\project\target\manifest.json
+[0m22:15:29.885360 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\Rodrigo\Desktop\quizz\pratica_dbt_duckdb\project\target\semantic_manifest.json
+[0m22:15:29.900621 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'ecbf79e4-e9f3-4dd6-86cc-48c22233e66a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000201A70DC5F0>]}
+[0m22:15:29.901216 [info ] [MainThread]: Found 5 models, 2 data tests, 477 macros
+[0m22:15:29.901806 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'ecbf79e4-e9f3-4dd6-86cc-48c22233e66a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000201A9B5F770>]}
+[0m22:15:29.904861 [info ] [MainThread]: 
+[0m22:15:29.905550 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m22:15:29.906049 [info ] [MainThread]: 
+[0m22:15:29.906773 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m22:15:29.914317 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_project_data'
+[0m22:15:29.928832 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_project_data'
+[0m22:15:29.932141 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_project_data'
+[0m22:15:30.030621 [debug] [ThreadPool]: Using duckdb connection "list_project_data"
+[0m22:15:30.031088 [debug] [ThreadPool]: Using duckdb connection "list_project_data"
+[0m22:15:30.031571 [debug] [ThreadPool]: Using duckdb connection "list_project_data"
+[0m22:15:30.031995 [debug] [ThreadPool]: On list_project_data: /* {"app": "dbt", "dbt_version": "1.11.9", "profile_name": "projeto_educacao", "target_name": "dev", "connection_name": "list_project_data"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = '"project_data"'
+    
+  
+  
+[0m22:15:30.032388 [debug] [ThreadPool]: On list_project_data: /* {"app": "dbt", "dbt_version": "1.11.9", "profile_name": "projeto_educacao", "target_name": "dev", "connection_name": "list_project_data"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = '"project_data"'
+    
+  
+  
+[0m22:15:30.032873 [debug] [ThreadPool]: On list_project_data: /* {"app": "dbt", "dbt_version": "1.11.9", "profile_name": "projeto_educacao", "target_name": "dev", "connection_name": "list_project_data"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = '"project_data"'
+    
+  
+  
+[0m22:15:30.033300 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m22:15:30.033639 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m22:15:30.034064 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m22:15:30.065648 [debug] [ThreadPool]: SQL status: OK in 0.032 seconds
+[0m22:15:30.066113 [debug] [ThreadPool]: SQL status: OK in 0.032 seconds
+[0m22:15:30.066557 [debug] [ThreadPool]: SQL status: OK in 0.032 seconds
+[0m22:15:30.067998 [debug] [ThreadPool]: On list_project_data: Close
+[0m22:15:30.069480 [debug] [ThreadPool]: On list_project_data: Close
+[0m22:15:30.071294 [debug] [ThreadPool]: On list_project_data: Close
+[0m22:15:30.072380 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_project_data, now create_project_data_main_serving)
+[0m22:15:30.072907 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_project_data, now create_project_data_main_staging)
+[0m22:15:30.073519 [debug] [ThreadPool]: Creating schema "database: "project_data"
+schema: "main_serving"
+"
+[0m22:15:30.073969 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_project_data, now create_project_data_main_intermediate)
+[0m22:15:30.074568 [debug] [ThreadPool]: Creating schema "database: "project_data"
+schema: "main_staging"
+"
+[0m22:15:30.081516 [debug] [ThreadPool]: Using duckdb connection "create_project_data_main_serving"
+[0m22:15:30.082191 [debug] [ThreadPool]: Creating schema "database: "project_data"
+schema: "main_intermediate"
+"
+[0m22:15:30.085375 [debug] [ThreadPool]: Using duckdb connection "create_project_data_main_staging"
+[0m22:15:30.085897 [debug] [ThreadPool]: On create_project_data_main_serving: /* {"app": "dbt", "dbt_version": "1.11.9", "profile_name": "projeto_educacao", "target_name": "dev", "connection_name": "create_project_data_main_serving"} */
+
+    
+        select type from duckdb_databases()
+        where lower(database_name)='project_data'
+        and type='sqlite'
+    
+  
+[0m22:15:30.088082 [debug] [ThreadPool]: Using duckdb connection "create_project_data_main_intermediate"
+[0m22:15:30.088497 [debug] [ThreadPool]: On create_project_data_main_staging: /* {"app": "dbt", "dbt_version": "1.11.9", "profile_name": "projeto_educacao", "target_name": "dev", "connection_name": "create_project_data_main_staging"} */
+
+    
+        select type from duckdb_databases()
+        where lower(database_name)='project_data'
+        and type='sqlite'
+    
+  
+[0m22:15:30.088918 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m22:15:30.089328 [debug] [ThreadPool]: On create_project_data_main_intermediate: /* {"app": "dbt", "dbt_version": "1.11.9", "profile_name": "projeto_educacao", "target_name": "dev", "connection_name": "create_project_data_main_intermediate"} */
+
+    
+        select type from duckdb_databases()
+        where lower(database_name)='project_data'
+        and type='sqlite'
+    
+  
+[0m22:15:30.089795 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m22:15:30.090339 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m22:15:30.091177 [debug] [ThreadPool]: SQL status: OK in 0.002 seconds
+[0m22:15:30.091697 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m22:15:30.092068 [debug] [ThreadPool]: SQL status: OK in 0.002 seconds
+[0m22:15:30.093455 [debug] [ThreadPool]: Using duckdb connection "create_project_data_main_serving"
+[0m22:15:30.094773 [debug] [ThreadPool]: Using duckdb connection "create_project_data_main_intermediate"
+[0m22:15:30.095092 [debug] [ThreadPool]: On create_project_data_main_serving: BEGIN
+[0m22:15:30.096213 [debug] [ThreadPool]: Using duckdb connection "create_project_data_main_staging"
+[0m22:15:30.096541 [debug] [ThreadPool]: On create_project_data_main_intermediate: BEGIN
+[0m22:15:30.096957 [debug] [ThreadPool]: On create_project_data_main_staging: BEGIN
+[0m22:15:30.097336 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m22:15:30.097726 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m22:15:30.098019 [debug] [ThreadPool]: Using duckdb connection "create_project_data_main_serving"
+[0m22:15:30.098324 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m22:15:30.098599 [debug] [ThreadPool]: Using duckdb connection "create_project_data_main_intermediate"
+[0m22:15:30.098914 [debug] [ThreadPool]: On create_project_data_main_serving: /* {"app": "dbt", "dbt_version": "1.11.9", "profile_name": "projeto_educacao", "target_name": "dev", "connection_name": "create_project_data_main_serving"} */
+
+    
+    
+        create schema if not exists "project_data"."main_serving"
+    
+[0m22:15:30.099220 [debug] [ThreadPool]: Using duckdb connection "create_project_data_main_staging"
+[0m22:15:30.099525 [debug] [ThreadPool]: On create_project_data_main_intermediate: /* {"app": "dbt", "dbt_version": "1.11.9", "profile_name": "projeto_educacao", "target_name": "dev", "connection_name": "create_project_data_main_intermediate"} */
+
+    
+    
+        create schema if not exists "project_data"."main_intermediate"
+    
+[0m22:15:30.099955 [debug] [ThreadPool]: On create_project_data_main_staging: /* {"app": "dbt", "dbt_version": "1.11.9", "profile_name": "projeto_educacao", "target_name": "dev", "connection_name": "create_project_data_main_staging"} */
+
+    
+    
+        create schema if not exists "project_data"."main_staging"
+    
+[0m22:15:30.100299 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m22:15:30.101358 [debug] [ThreadPool]: On create_project_data_main_serving: COMMIT
+[0m22:15:30.101729 [debug] [ThreadPool]: Using duckdb connection "create_project_data_main_serving"
+[0m22:15:30.102028 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m22:15:30.102308 [debug] [ThreadPool]: SQL status: OK in 0.002 seconds
+[0m22:15:30.102590 [debug] [ThreadPool]: On create_project_data_main_serving: COMMIT
+[0m22:15:30.103445 [debug] [ThreadPool]: On create_project_data_main_staging: COMMIT
+[0m22:15:30.104279 [debug] [ThreadPool]: On create_project_data_main_intermediate: COMMIT
+[0m22:15:30.104705 [debug] [ThreadPool]: Using duckdb connection "create_project_data_main_staging"
+[0m22:15:30.105114 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m22:15:30.105473 [debug] [ThreadPool]: Using duckdb connection "create_project_data_main_intermediate"
+[0m22:15:30.105847 [debug] [ThreadPool]: On create_project_data_main_staging: COMMIT
+[0m22:15:30.106242 [debug] [ThreadPool]: On create_project_data_main_serving: Close
+[0m22:15:30.106630 [debug] [ThreadPool]: On create_project_data_main_intermediate: COMMIT
+[0m22:15:30.107604 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m22:15:30.107949 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m22:15:30.108244 [debug] [ThreadPool]: On create_project_data_main_staging: Close
+[0m22:15:30.108541 [debug] [ThreadPool]: On create_project_data_main_intermediate: Close
+[0m22:15:30.110393 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_project_data_main_serving'
+[0m22:15:30.116403 [debug] [ThreadPool]: Using duckdb connection "list_project_data_main_serving"
+[0m22:15:30.117017 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_project_data_main_staging'
+[0m22:15:30.117608 [debug] [ThreadPool]: On list_project_data_main_serving: BEGIN
+[0m22:15:30.118137 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_project_data_main_intermediate'
+[0m22:15:30.121212 [debug] [ThreadPool]: Using duckdb connection "list_project_data_main_staging"
+[0m22:15:30.121777 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m22:15:30.124290 [debug] [ThreadPool]: Using duckdb connection "list_project_data_main_intermediate"
+[0m22:15:30.124755 [debug] [ThreadPool]: On list_project_data_main_staging: BEGIN
+[0m22:15:30.125360 [debug] [ThreadPool]: On list_project_data_main_intermediate: BEGIN
+[0m22:15:30.125733 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m22:15:30.126124 [debug] [ThreadPool]: SQL status: OK in 0.004 seconds
+[0m22:15:30.126503 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m22:15:30.127047 [debug] [ThreadPool]: Using duckdb connection "list_project_data_main_serving"
+[0m22:15:30.127596 [debug] [ThreadPool]: SQL status: OK in 0.002 seconds
+[0m22:15:30.127916 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m22:15:30.128268 [debug] [ThreadPool]: On list_project_data_main_serving: /* {"app": "dbt", "dbt_version": "1.11.9", "profile_name": "projeto_educacao", "target_name": "dev", "connection_name": "list_project_data_main_serving"} */
+select
+      'project_data' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'main_serving'
+    and lower(table_catalog) = 'project_data'
+  
+[0m22:15:30.128710 [debug] [ThreadPool]: Using duckdb connection "list_project_data_main_staging"
+[0m22:15:30.129000 [debug] [ThreadPool]: Using duckdb connection "list_project_data_main_intermediate"
+[0m22:15:30.129507 [debug] [ThreadPool]: On list_project_data_main_staging: /* {"app": "dbt", "dbt_version": "1.11.9", "profile_name": "projeto_educacao", "target_name": "dev", "connection_name": "list_project_data_main_staging"} */
+select
+      'project_data' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'main_staging'
+    and lower(table_catalog) = 'project_data'
+  
+[0m22:15:30.129973 [debug] [ThreadPool]: On list_project_data_main_intermediate: /* {"app": "dbt", "dbt_version": "1.11.9", "profile_name": "projeto_educacao", "target_name": "dev", "connection_name": "list_project_data_main_intermediate"} */
+select
+      'project_data' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'main_intermediate'
+    and lower(table_catalog) = 'project_data'
+  
+[0m22:15:30.134921 [debug] [ThreadPool]: SQL status: OK in 0.006 seconds
+[0m22:15:30.135332 [debug] [ThreadPool]: SQL status: OK in 0.005 seconds
+[0m22:15:30.135627 [debug] [ThreadPool]: SQL status: OK in 0.005 seconds
+[0m22:15:30.136913 [debug] [ThreadPool]: On list_project_data_main_serving: ROLLBACK
+[0m22:15:30.138156 [debug] [ThreadPool]: On list_project_data_main_intermediate: ROLLBACK
+[0m22:15:30.139290 [debug] [ThreadPool]: On list_project_data_main_staging: ROLLBACK
+[0m22:15:30.141483 [debug] [ThreadPool]: Failed to rollback 'list_project_data_main_intermediate'
+[0m22:15:30.141940 [debug] [ThreadPool]: On list_project_data_main_intermediate: Close
+[0m22:15:30.143556 [debug] [ThreadPool]: Failed to rollback 'list_project_data_main_serving'
+[0m22:15:30.143945 [debug] [ThreadPool]: On list_project_data_main_serving: Close
+[0m22:15:30.145096 [debug] [ThreadPool]: Failed to rollback 'list_project_data_main_staging'
+[0m22:15:30.145429 [debug] [ThreadPool]: On list_project_data_main_staging: Close
+[0m22:15:30.146520 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'ecbf79e4-e9f3-4dd6-86cc-48c22233e66a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000201A9D27930>]}
+[0m22:15:30.147036 [debug] [MainThread]: Using duckdb connection "master"
+[0m22:15:30.147381 [debug] [MainThread]: On master: BEGIN
+[0m22:15:30.147742 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m22:15:30.148503 [debug] [MainThread]: SQL status: OK in 0.001 seconds
+[0m22:15:30.148852 [debug] [MainThread]: On master: COMMIT
+[0m22:15:30.149147 [debug] [MainThread]: Using duckdb connection "master"
+[0m22:15:30.149426 [debug] [MainThread]: On master: COMMIT
+[0m22:15:30.149927 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m22:15:30.150242 [debug] [MainThread]: On master: Close
+[0m22:15:30.154623 [debug] [Thread-1 (]: Began running node model.projeto_educacao.stg_gestor_escolar
+[0m22:15:30.155090 [debug] [Thread-2 (]: Began running node model.projeto_educacao.stg_ied_escolas
+[0m22:15:30.155733 [info ] [Thread-1 (]: 1 of 5 START sql view model main_staging.stg_gestor_escolar .................... [RUN]
+[0m22:15:30.156258 [info ] [Thread-2 (]: 2 of 5 START sql view model main_staging.stg_ied_escolas ....................... [RUN]
+[0m22:15:30.157035 [debug] [Thread-1 (]: Acquiring new duckdb connection 'model.projeto_educacao.stg_gestor_escolar'
+[0m22:15:30.157563 [debug] [Thread-2 (]: Acquiring new duckdb connection 'model.projeto_educacao.stg_ied_escolas'
+[0m22:15:30.157954 [debug] [Thread-1 (]: Began compiling node model.projeto_educacao.stg_gestor_escolar
+[0m22:15:30.158324 [debug] [Thread-2 (]: Began compiling node model.projeto_educacao.stg_ied_escolas
+[0m22:15:30.165744 [debug] [Thread-1 (]: Writing injected SQL for node "model.projeto_educacao.stg_gestor_escolar"
+[0m22:15:30.167557 [debug] [Thread-2 (]: Writing injected SQL for node "model.projeto_educacao.stg_ied_escolas"
+[0m22:15:30.169102 [debug] [Thread-1 (]: Began executing node model.projeto_educacao.stg_gestor_escolar
+[0m22:15:30.169660 [debug] [Thread-2 (]: Began executing node model.projeto_educacao.stg_ied_escolas
+[0m22:15:30.205365 [debug] [Thread-1 (]: Writing runtime sql for node "model.projeto_educacao.stg_gestor_escolar"
+[0m22:15:30.209923 [debug] [Thread-2 (]: Writing runtime sql for node "model.projeto_educacao.stg_ied_escolas"
+[0m22:15:30.211544 [debug] [Thread-1 (]: Using duckdb connection "model.projeto_educacao.stg_gestor_escolar"
+[0m22:15:30.212231 [debug] [Thread-1 (]: On model.projeto_educacao.stg_gestor_escolar: BEGIN
+[0m22:15:30.212882 [debug] [Thread-2 (]: Using duckdb connection "model.projeto_educacao.stg_ied_escolas"
+[0m22:15:30.213359 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m22:15:30.213738 [debug] [Thread-2 (]: On model.projeto_educacao.stg_ied_escolas: BEGIN
+[0m22:15:30.214487 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m22:15:30.214993 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m22:15:30.215391 [debug] [Thread-1 (]: Using duckdb connection "model.projeto_educacao.stg_gestor_escolar"
+[0m22:15:30.215750 [debug] [Thread-2 (]: SQL status: OK in 0.001 seconds
+[0m22:15:30.216163 [debug] [Thread-1 (]: On model.projeto_educacao.stg_gestor_escolar: /* {"app": "dbt", "dbt_version": "1.11.9", "profile_name": "projeto_educacao", "target_name": "dev", "node_id": "model.projeto_educacao.stg_gestor_escolar"} */
+
+  
+  create view "project_data"."main_staging"."stg_gestor_escolar__dbt_tmp" as (
+    SELECT
+    CAST(nu_ano_censo AS INTEGER) AS nu_ano_censo,
+    CAST(co_entidade AS BIGINT) AS co_entidade,
+    CAST(qt_gest_bas AS INTEGER) AS qt_gest_bas,
+
+    -- Renomeando para bater com o que o INT espera:
+    CAST(qt_gest_bas_esco_sup_grad AS INTEGER) 
+        AS qt_graduado,
+
+    CAST(qt_gest_bas_esco_sup_pos_espec AS INTEGER) 
+        AS qt_pos_especialista,
+
+    CAST(qt_gest_bas_esco_sup_pos_mestra AS INTEGER) 
+        AS qt_pos_mestre,
+
+    CAST(qt_gest_bas_esco_sup_pos_douto AS INTEGER) 
+        AS qt_pos_doutor,
+
+    CAST(qt_gest_bas_diretor AS INTEGER) 
+        AS qt_diretor,
+
+    -- Renomeando para facilitar o cálculo de acesso técnico:
+    CAST(qt_gest_bas_acesso_cargo_conc AS INTEGER) 
+        AS qt_acesso_tecnico, -- Aqui usamos o nome que o INT espera para o concurso
+
+    CAST(qt_gest_bas_acesso_cargo_indic AS INTEGER) 
+        AS qt_acesso_indicacao
+
+FROM raw.tabela_gestor_escolar_2025
+  );
+
+[0m22:15:30.216600 [debug] [Thread-2 (]: Using duckdb connection "model.projeto_educacao.stg_ied_escolas"
+[0m22:15:30.217334 [debug] [Thread-2 (]: On model.projeto_educacao.stg_ied_escolas: /* {"app": "dbt", "dbt_version": "1.11.9", "profile_name": "projeto_educacao", "target_name": "dev", "node_id": "model.projeto_educacao.stg_ied_escolas"} */
+
+  
+  create view "project_data"."main_staging"."stg_ied_escolas__dbt_tmp" as (
+    SELECT
+    CAST(nu_ano_censo AS INTEGER) AS nu_ano_censo,
+
+    CAST(co_entidade AS BIGINT) AS co_entidade,
+
+    sg_uf,
+    no_municipio,
+    no_entidade,
+
+    CAST(NULLIF(fun_cat_1, '--') AS DOUBLE) AS fun_cat_1,
+    CAST(NULLIF(fun_cat_2, '--') AS DOUBLE) AS fun_cat_2,
+    CAST(NULLIF(fun_cat_3, '--') AS DOUBLE) AS fun_cat_3,
+    CAST(NULLIF(fun_cat_4, '--') AS DOUBLE) AS fun_cat_4,
+    CAST(NULLIF(fun_cat_5, '--') AS DOUBLE) AS fun_cat_5,
+    CAST(NULLIF(fun_cat_6, '--') AS DOUBLE) AS fun_cat_6
+
+FROM raw.ied_escolas_2025
+
+WHERE sg_uf = 'RJ'
+  );
+
+[0m22:15:30.218080 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m22:15:30.225287 [debug] [Thread-1 (]: Using duckdb connection "model.projeto_educacao.stg_gestor_escolar"
+[0m22:15:30.225834 [debug] [Thread-2 (]: SQL status: OK in 0.008 seconds
+[0m22:15:30.226261 [debug] [Thread-1 (]: On model.projeto_educacao.stg_gestor_escolar: /* {"app": "dbt", "dbt_version": "1.11.9", "profile_name": "projeto_educacao", "target_name": "dev", "node_id": "model.projeto_educacao.stg_gestor_escolar"} */
+alter view "project_data"."main_staging"."stg_gestor_escolar" rename to "stg_gestor_escolar__dbt_backup"
+[0m22:15:30.229554 [debug] [Thread-2 (]: Using duckdb connection "model.projeto_educacao.stg_ied_escolas"
+[0m22:15:30.230148 [debug] [Thread-2 (]: On model.projeto_educacao.stg_ied_escolas: /* {"app": "dbt", "dbt_version": "1.11.9", "profile_name": "projeto_educacao", "target_name": "dev", "node_id": "model.projeto_educacao.stg_ied_escolas"} */
+alter view "project_data"."main_staging"."stg_ied_escolas" rename to "stg_ied_escolas__dbt_backup"
+[0m22:15:30.230646 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m22:15:30.231053 [debug] [Thread-2 (]: SQL status: OK in 0.000 seconds
+[0m22:15:30.234022 [debug] [Thread-1 (]: Using duckdb connection "model.projeto_educacao.stg_gestor_escolar"
+[0m22:15:30.241511 [debug] [Thread-2 (]: Using duckdb connection "model.projeto_educacao.stg_ied_escolas"
+[0m22:15:30.242033 [debug] [Thread-1 (]: On model.projeto_educacao.stg_gestor_escolar: /* {"app": "dbt", "dbt_version": "1.11.9", "profile_name": "projeto_educacao", "target_name": "dev", "node_id": "model.projeto_educacao.stg_gestor_escolar"} */
+alter view "project_data"."main_staging"."stg_gestor_escolar__dbt_tmp" rename to "stg_gestor_escolar"
+[0m22:15:30.242443 [debug] [Thread-2 (]: On model.projeto_educacao.stg_ied_escolas: /* {"app": "dbt", "dbt_version": "1.11.9", "profile_name": "projeto_educacao", "target_name": "dev", "node_id": "model.projeto_educacao.stg_ied_escolas"} */
+alter view "project_data"."main_staging"."stg_ied_escolas__dbt_tmp" rename to "stg_ied_escolas"
+[0m22:15:30.243288 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m22:15:30.243681 [debug] [Thread-2 (]: SQL status: OK in 0.001 seconds
+[0m22:15:30.259716 [debug] [Thread-1 (]: On model.projeto_educacao.stg_gestor_escolar: COMMIT
+[0m22:15:30.261985 [debug] [Thread-2 (]: On model.projeto_educacao.stg_ied_escolas: COMMIT
+[0m22:15:30.262536 [debug] [Thread-1 (]: Using duckdb connection "model.projeto_educacao.stg_gestor_escolar"
+[0m22:15:30.263005 [debug] [Thread-2 (]: Using duckdb connection "model.projeto_educacao.stg_ied_escolas"
+[0m22:15:30.263484 [debug] [Thread-1 (]: On model.projeto_educacao.stg_gestor_escolar: COMMIT
+[0m22:15:30.263929 [debug] [Thread-2 (]: On model.projeto_educacao.stg_ied_escolas: COMMIT
+[0m22:15:30.267237 [debug] [Thread-1 (]: SQL status: OK in 0.003 seconds
+[0m22:15:30.273482 [debug] [Thread-1 (]: Using duckdb connection "model.projeto_educacao.stg_gestor_escolar"
+[0m22:15:30.273984 [debug] [Thread-1 (]: On model.projeto_educacao.stg_gestor_escolar: /* {"app": "dbt", "dbt_version": "1.11.9", "profile_name": "projeto_educacao", "target_name": "dev", "node_id": "model.projeto_educacao.stg_gestor_escolar"} */
+
+      drop view if exists "project_data"."main_staging"."stg_gestor_escolar__dbt_backup" cascade
+    
+[0m22:15:30.274413 [debug] [Thread-2 (]: SQL status: OK in 0.010 seconds
+[0m22:15:30.277886 [debug] [Thread-2 (]: Using duckdb connection "model.projeto_educacao.stg_ied_escolas"
+[0m22:15:30.278371 [debug] [Thread-2 (]: On model.projeto_educacao.stg_ied_escolas: /* {"app": "dbt", "dbt_version": "1.11.9", "profile_name": "projeto_educacao", "target_name": "dev", "node_id": "model.projeto_educacao.stg_ied_escolas"} */
+
+      drop view if exists "project_data"."main_staging"."stg_ied_escolas__dbt_backup" cascade
+    
+[0m22:15:30.279069 [debug] [Thread-1 (]: SQL status: OK in 0.004 seconds
+[0m22:15:30.281899 [debug] [Thread-1 (]: On model.projeto_educacao.stg_gestor_escolar: Close
+[0m22:15:30.282343 [debug] [Thread-2 (]: SQL status: OK in 0.004 seconds
+[0m22:15:30.283851 [debug] [Thread-2 (]: On model.projeto_educacao.stg_ied_escolas: Close
+[0m22:15:30.286399 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'ecbf79e4-e9f3-4dd6-86cc-48c22233e66a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000201A94EC950>]}
+[0m22:15:30.286822 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'ecbf79e4-e9f3-4dd6-86cc-48c22233e66a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000201A9D89F40>]}
+[0m22:15:30.287534 [info ] [Thread-1 (]: 1 of 5 OK created sql view model main_staging.stg_gestor_escolar ............... [[32mOK[0m in 0.13s]
+[0m22:15:30.288802 [debug] [Thread-1 (]: Finished running node model.projeto_educacao.stg_gestor_escolar
+[0m22:15:30.288111 [info ] [Thread-2 (]: 2 of 5 OK created sql view model main_staging.stg_ied_escolas .................. [[32mOK[0m in 0.13s]
+[0m22:15:30.289604 [debug] [Thread-2 (]: Finished running node model.projeto_educacao.stg_ied_escolas
+[0m22:15:30.290322 [debug] [Thread-3 (]: Began running node model.projeto_educacao.int_gestor_qualificacao
+[0m22:15:30.290899 [debug] [Thread-4 (]: Began running node model.projeto_educacao.int_professor_esforco_rj
+[0m22:15:30.291654 [info ] [Thread-3 (]: 3 of 5 START sql view model main_intermediate.int_gestor_qualificacao .......... [RUN]
+[0m22:15:30.293212 [debug] [Thread-3 (]: Acquiring new duckdb connection 'model.projeto_educacao.int_gestor_qualificacao'
+[0m22:15:30.292338 [info ] [Thread-4 (]: 4 of 5 START sql view model main_intermediate.int_professor_esforco_rj ......... [RUN]
+[0m22:15:30.293908 [debug] [Thread-3 (]: Began compiling node model.projeto_educacao.int_gestor_qualificacao
+[0m22:15:30.294622 [debug] [Thread-4 (]: Acquiring new duckdb connection 'model.projeto_educacao.int_professor_esforco_rj'
+[0m22:15:30.299209 [debug] [Thread-3 (]: Writing injected SQL for node "model.projeto_educacao.int_gestor_qualificacao"
+[0m22:15:30.299896 [debug] [Thread-4 (]: Began compiling node model.projeto_educacao.int_professor_esforco_rj
+[0m22:15:30.303905 [debug] [Thread-4 (]: Writing injected SQL for node "model.projeto_educacao.int_professor_esforco_rj"
+[0m22:15:30.305443 [debug] [Thread-3 (]: Began executing node model.projeto_educacao.int_gestor_qualificacao
+[0m22:15:30.310008 [debug] [Thread-3 (]: Writing runtime sql for node "model.projeto_educacao.int_gestor_qualificacao"
+[0m22:15:30.310475 [debug] [Thread-4 (]: Began executing node model.projeto_educacao.int_professor_esforco_rj
+[0m22:15:30.313735 [debug] [Thread-4 (]: Writing runtime sql for node "model.projeto_educacao.int_professor_esforco_rj"
+[0m22:15:30.315087 [debug] [Thread-3 (]: Using duckdb connection "model.projeto_educacao.int_gestor_qualificacao"
+[0m22:15:30.315772 [debug] [Thread-3 (]: On model.projeto_educacao.int_gestor_qualificacao: BEGIN
+[0m22:15:30.316340 [debug] [Thread-4 (]: Using duckdb connection "model.projeto_educacao.int_professor_esforco_rj"
+[0m22:15:30.316715 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m22:15:30.317101 [debug] [Thread-4 (]: On model.projeto_educacao.int_professor_esforco_rj: BEGIN
+[0m22:15:30.317643 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m22:15:30.318138 [debug] [Thread-3 (]: SQL status: OK in 0.001 seconds
+[0m22:15:30.318530 [debug] [Thread-4 (]: SQL status: OK in 0.001 seconds
+[0m22:15:30.318882 [debug] [Thread-3 (]: Using duckdb connection "model.projeto_educacao.int_gestor_qualificacao"
+[0m22:15:30.319247 [debug] [Thread-4 (]: Using duckdb connection "model.projeto_educacao.int_professor_esforco_rj"
+[0m22:15:30.319704 [debug] [Thread-3 (]: On model.projeto_educacao.int_gestor_qualificacao: /* {"app": "dbt", "dbt_version": "1.11.9", "profile_name": "projeto_educacao", "target_name": "dev", "node_id": "model.projeto_educacao.int_gestor_qualificacao"} */
+
+  
+  create view "project_data"."main_intermediate"."int_gestor_qualificacao__dbt_tmp" as (
+    -- int_gestor_qualificacao.sql
+
+with stg_gestor as (
+    select * from "project_data"."main_staging"."stg_gestor_escolar"
+),
+
+stg_escolas_rj as (
+    -- Usamos a staging de escolas apenas para filtrar o estado
+    select co_entidade from "project_data"."main_staging"."stg_ied_escolas"
+    where sg_uf = 'RJ'
+),
+
+filtrado_rj as (
+    select g.* 
+    from stg_gestor g
+    inner join stg_escolas_rj e on g.co_entidade = e.co_entidade
+),
+
+metricas as (
+    select
+        co_entidade,
+        nu_ano_censo,
+        qt_gest_bas as total_gestores,
+        -- Índice de Qualificação Acadêmica (IQA)
+        -- Pesos: Graduação(1), Especialização(2), Mestrado(3), Doutorado(4)
+        case 
+            when total_gestores = 0 then null
+            else round(
+                cast(
+                    (qt_graduado * 1) + 
+                    (qt_pos_especialista * 2) + 
+                    (qt_pos_mestre * 3) + 
+                    (qt_pos_doutor * 4) 
+                as double) / (4.0 * total_gestores), 4
+            )
+        end as idx_qualificacao_academica,
+
+        -- Proporção de Acesso Técnico (Concurso/Seleção/Eleição)
+        case 
+            when total_gestores = 0 then null
+            else round(cast(qt_acesso_tecnico as double) / total_gestores, 4)
+        end as prop_acesso_tecnico
+    from filtrado_rj
+)
+
+select 
+    *,
+    -- Score Composto: Média entre formação e forma de acesso
+    round((idx_qualificacao_academica + prop_acesso_tecnico) / 2.0, 4) as score_qualificacao_gestor
+from metricas
+  );
+
+[0m22:15:30.320234 [debug] [Thread-4 (]: On model.projeto_educacao.int_professor_esforco_rj: /* {"app": "dbt", "dbt_version": "1.11.9", "profile_name": "projeto_educacao", "target_name": "dev", "node_id": "model.projeto_educacao.int_professor_esforco_rj"} */
+
+  
+  create view "project_data"."main_intermediate"."int_professor_esforco_rj__dbt_tmp" as (
+    -- int_professor_esforco_rj.sql
+with source as (
+    select * from "project_data"."main_staging"."stg_ied_escolas"
+    where sg_uf = 'RJ'
+),
+
+calculo_total as (
+    select
+        *,
+        -- Soma de todas as categorias para ter o denominador
+        (coalesce(fun_cat_1, 0) + coalesce(fun_cat_2, 0) + coalesce(fun_cat_3, 0) + 
+         coalesce(fun_cat_4, 0) + coalesce(fun_cat_5, 0) + coalesce(fun_cat_6, 0)) as total_docentes
+    from source
+),
+
+ied_calculado as (
+    select
+        co_entidade,
+        nu_ano_censo,
+        no_entidade,
+        no_municipio,
+        total_docentes,
+        -- Média ponderada: (Qtd na Categoria * Peso da Categoria) / Total
+        case 
+            when total_docentes = 0 then null
+            else round(
+                cast(
+                    (fun_cat_1 * 1.0) + (fun_cat_2 * 2.0) + (fun_cat_3 * 3.0) + 
+                    (fun_cat_4 * 4.0) + (fun_cat_5 * 5.0) + (fun_cat_6 * 6.0)
+                as double) / total_docentes, 2
+            )
+        end as ied
+    from calculo_total
+)
+
+select * from ied_calculado
+  );
+
+[0m22:15:30.323053 [debug] [Thread-4 (]: SQL status: OK in 0.002 seconds
+[0m22:15:30.323553 [debug] [Thread-3 (]: SQL status: OK in 0.003 seconds
+[0m22:15:30.326883 [debug] [Thread-4 (]: Using duckdb connection "model.projeto_educacao.int_professor_esforco_rj"
+[0m22:15:30.329860 [debug] [Thread-3 (]: Using duckdb connection "model.projeto_educacao.int_gestor_qualificacao"
+[0m22:15:30.330337 [debug] [Thread-4 (]: On model.projeto_educacao.int_professor_esforco_rj: /* {"app": "dbt", "dbt_version": "1.11.9", "profile_name": "projeto_educacao", "target_name": "dev", "node_id": "model.projeto_educacao.int_professor_esforco_rj"} */
+alter view "project_data"."main_intermediate"."int_professor_esforco_rj" rename to "int_professor_esforco_rj__dbt_backup"
+[0m22:15:30.330745 [debug] [Thread-3 (]: On model.projeto_educacao.int_gestor_qualificacao: /* {"app": "dbt", "dbt_version": "1.11.9", "profile_name": "projeto_educacao", "target_name": "dev", "node_id": "model.projeto_educacao.int_gestor_qualificacao"} */
+alter view "project_data"."main_intermediate"."int_gestor_qualificacao__dbt_tmp" rename to "int_gestor_qualificacao"
+[0m22:15:30.331662 [debug] [Thread-4 (]: SQL status: OK in 0.000 seconds
+[0m22:15:30.332064 [debug] [Thread-3 (]: SQL status: OK in 0.001 seconds
+[0m22:15:30.335328 [debug] [Thread-4 (]: Using duckdb connection "model.projeto_educacao.int_professor_esforco_rj"
+[0m22:15:30.336770 [debug] [Thread-3 (]: On model.projeto_educacao.int_gestor_qualificacao: COMMIT
+[0m22:15:30.337198 [debug] [Thread-4 (]: On model.projeto_educacao.int_professor_esforco_rj: /* {"app": "dbt", "dbt_version": "1.11.9", "profile_name": "projeto_educacao", "target_name": "dev", "node_id": "model.projeto_educacao.int_professor_esforco_rj"} */
+alter view "project_data"."main_intermediate"."int_professor_esforco_rj__dbt_tmp" rename to "int_professor_esforco_rj"
+[0m22:15:30.337596 [debug] [Thread-3 (]: Using duckdb connection "model.projeto_educacao.int_gestor_qualificacao"
+[0m22:15:30.338085 [debug] [Thread-3 (]: On model.projeto_educacao.int_gestor_qualificacao: COMMIT
+[0m22:15:30.338501 [debug] [Thread-4 (]: SQL status: OK in 0.001 seconds
+[0m22:15:30.340175 [debug] [Thread-4 (]: On model.projeto_educacao.int_professor_esforco_rj: COMMIT
+[0m22:15:30.340662 [debug] [Thread-4 (]: Using duckdb connection "model.projeto_educacao.int_professor_esforco_rj"
+[0m22:15:30.341032 [debug] [Thread-4 (]: On model.projeto_educacao.int_professor_esforco_rj: COMMIT
+[0m22:15:30.341990 [debug] [Thread-3 (]: SQL status: OK in 0.003 seconds
+[0m22:15:30.344495 [debug] [Thread-3 (]: Using duckdb connection "model.projeto_educacao.int_gestor_qualificacao"
+[0m22:15:30.344961 [debug] [Thread-3 (]: On model.projeto_educacao.int_gestor_qualificacao: /* {"app": "dbt", "dbt_version": "1.11.9", "profile_name": "projeto_educacao", "target_name": "dev", "node_id": "model.projeto_educacao.int_gestor_qualificacao"} */
+
+      drop view if exists "project_data"."main_intermediate"."int_gestor_qualificacao__dbt_backup" cascade
+    
+[0m22:15:30.345409 [debug] [Thread-4 (]: SQL status: OK in 0.004 seconds
+[0m22:15:30.348157 [debug] [Thread-4 (]: Using duckdb connection "model.projeto_educacao.int_professor_esforco_rj"
+[0m22:15:30.348643 [debug] [Thread-4 (]: On model.projeto_educacao.int_professor_esforco_rj: /* {"app": "dbt", "dbt_version": "1.11.9", "profile_name": "projeto_educacao", "target_name": "dev", "node_id": "model.projeto_educacao.int_professor_esforco_rj"} */
+
+      drop view if exists "project_data"."main_intermediate"."int_professor_esforco_rj__dbt_backup" cascade
+    
+[0m22:15:30.349036 [debug] [Thread-3 (]: SQL status: OK in 0.003 seconds
+[0m22:15:30.350570 [debug] [Thread-3 (]: On model.projeto_educacao.int_gestor_qualificacao: Close
+[0m22:15:30.351216 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'ecbf79e4-e9f3-4dd6-86cc-48c22233e66a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000201A9FC6350>]}
+[0m22:15:30.351958 [info ] [Thread-3 (]: 3 of 5 OK created sql view model main_intermediate.int_gestor_qualificacao ..... [[32mOK[0m in 0.06s]
+[0m22:15:30.352708 [debug] [Thread-3 (]: Finished running node model.projeto_educacao.int_gestor_qualificacao
+[0m22:15:30.353100 [debug] [Thread-4 (]: SQL status: OK in 0.004 seconds
+[0m22:15:30.354628 [debug] [Thread-4 (]: On model.projeto_educacao.int_professor_esforco_rj: Close
+[0m22:15:30.355195 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'ecbf79e4-e9f3-4dd6-86cc-48c22233e66a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000201A94F9BD0>]}
+[0m22:15:30.355812 [info ] [Thread-4 (]: 4 of 5 OK created sql view model main_intermediate.int_professor_esforco_rj .... [[32mOK[0m in 0.06s]
+[0m22:15:30.356506 [debug] [Thread-4 (]: Finished running node model.projeto_educacao.int_professor_esforco_rj
+[0m22:15:30.357215 [debug] [Thread-1 (]: Began running node model.projeto_educacao.srv_hipotese_gestor_esforco_rj
+[0m22:15:30.358025 [info ] [Thread-1 (]: 5 of 5 START sql table model main_serving.srv_hipotese_gestor_esforco_rj ....... [RUN]
+[0m22:15:30.358870 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.projeto_educacao.stg_gestor_escolar, now model.projeto_educacao.srv_hipotese_gestor_esforco_rj)
+[0m22:15:30.359448 [debug] [Thread-1 (]: Began compiling node model.projeto_educacao.srv_hipotese_gestor_esforco_rj
+[0m22:15:30.364408 [debug] [Thread-1 (]: Writing injected SQL for node "model.projeto_educacao.srv_hipotese_gestor_esforco_rj"
+[0m22:15:30.366613 [debug] [Thread-1 (]: Began executing node model.projeto_educacao.srv_hipotese_gestor_esforco_rj
+[0m22:15:30.389250 [debug] [Thread-1 (]: Writing runtime sql for node "model.projeto_educacao.srv_hipotese_gestor_esforco_rj"
+[0m22:15:30.391065 [debug] [Thread-1 (]: Using duckdb connection "model.projeto_educacao.srv_hipotese_gestor_esforco_rj"
+[0m22:15:30.391588 [debug] [Thread-1 (]: On model.projeto_educacao.srv_hipotese_gestor_esforco_rj: BEGIN
+[0m22:15:30.391981 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m22:15:30.392687 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m22:15:30.393081 [debug] [Thread-1 (]: Using duckdb connection "model.projeto_educacao.srv_hipotese_gestor_esforco_rj"
+[0m22:15:30.393543 [debug] [Thread-1 (]: On model.projeto_educacao.srv_hipotese_gestor_esforco_rj: /* {"app": "dbt", "dbt_version": "1.11.9", "profile_name": "projeto_educacao", "target_name": "dev", "node_id": "model.projeto_educacao.srv_hipotese_gestor_esforco_rj"} */
+
+  
+    
+    
+
+    create  table
+      "project_data"."main_serving"."srv_hipotese_gestor_esforco_rj__dbt_tmp"
+  
+    as (
+      -- srv_analise_hipotese_rj.sql
+
+with esforco as (
+    select * from "project_data"."main_intermediate"."int_professor_esforco_rj"
+),
+
+gestores as (
+    select * from "project_data"."main_intermediate"."int_gestor_qualificacao"
+),
+
+final as (
+    select
+        e.co_entidade,
+        e.no_entidade,
+        e.no_municipio,
+        e.ied as indice_esforco_docente,
+        g.score_qualificacao_gestor,
+        
+        -- Categorização do Gestor para o Eixo X do gráfico
+        case 
+            when g.score_qualificacao_gestor < 0.3 then '1. Baixa Qualificação'
+            when g.score_qualificacao_gestor < 0.6 then '2. Qualificação Média'
+            when g.score_qualificacao_gestor < 0.8 then '3. Qualificação Alta'
+            else '4. Qualificação de Elite'
+        end as categoria_gestao,
+
+        -- Flag para destacar escolas com Doutores/Concurso no gráfico
+        case 
+            when g.score_qualificacao_gestor >= 0.8 then 'Sim'
+            else 'Não'
+        end as fl_gestao_referencia
+
+    from esforco e
+    inner join gestores g 
+        on e.co_entidade = g.co_entidade 
+        and e.nu_ano_censo = g.nu_ano_censo
+)
+
+select * from final
+    );
+  
+  
+[0m22:15:30.420336 [debug] [Thread-1 (]: SQL status: OK in 0.026 seconds
+[0m22:15:30.423769 [debug] [Thread-1 (]: Using duckdb connection "model.projeto_educacao.srv_hipotese_gestor_esforco_rj"
+[0m22:15:30.424241 [debug] [Thread-1 (]: On model.projeto_educacao.srv_hipotese_gestor_esforco_rj: /* {"app": "dbt", "dbt_version": "1.11.9", "profile_name": "projeto_educacao", "target_name": "dev", "node_id": "model.projeto_educacao.srv_hipotese_gestor_esforco_rj"} */
+alter table "project_data"."main_serving"."srv_hipotese_gestor_esforco_rj__dbt_tmp" rename to "srv_hipotese_gestor_esforco_rj"
+[0m22:15:30.425039 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m22:15:30.430427 [debug] [Thread-1 (]: On model.projeto_educacao.srv_hipotese_gestor_esforco_rj: COMMIT
+[0m22:15:30.430915 [debug] [Thread-1 (]: Using duckdb connection "model.projeto_educacao.srv_hipotese_gestor_esforco_rj"
+[0m22:15:30.431289 [debug] [Thread-1 (]: On model.projeto_educacao.srv_hipotese_gestor_esforco_rj: COMMIT
+[0m22:15:30.439088 [debug] [Thread-1 (]: SQL status: OK in 0.007 seconds
+[0m22:15:30.441585 [debug] [Thread-1 (]: Using duckdb connection "model.projeto_educacao.srv_hipotese_gestor_esforco_rj"
+[0m22:15:30.442038 [debug] [Thread-1 (]: On model.projeto_educacao.srv_hipotese_gestor_esforco_rj: /* {"app": "dbt", "dbt_version": "1.11.9", "profile_name": "projeto_educacao", "target_name": "dev", "node_id": "model.projeto_educacao.srv_hipotese_gestor_esforco_rj"} */
+
+      drop table if exists "project_data"."main_serving"."srv_hipotese_gestor_esforco_rj__dbt_backup" cascade
+    
+[0m22:15:30.442772 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m22:15:30.444183 [debug] [Thread-1 (]: On model.projeto_educacao.srv_hipotese_gestor_esforco_rj: Close
+[0m22:15:30.444771 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'ecbf79e4-e9f3-4dd6-86cc-48c22233e66a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000201A9F50E50>]}
+[0m22:15:30.445406 [info ] [Thread-1 (]: 5 of 5 OK created sql table model main_serving.srv_hipotese_gestor_esforco_rj .. [[32mOK[0m in 0.09s]
+[0m22:15:30.446132 [debug] [Thread-1 (]: Finished running node model.projeto_educacao.srv_hipotese_gestor_esforco_rj
+[0m22:15:30.447741 [debug] [MainThread]: Using duckdb connection "master"
+[0m22:15:30.448314 [debug] [MainThread]: On master: BEGIN
+[0m22:15:30.448736 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m22:15:30.449559 [debug] [MainThread]: SQL status: OK in 0.001 seconds
+[0m22:15:30.450011 [debug] [MainThread]: On master: COMMIT
+[0m22:15:30.450447 [debug] [MainThread]: Using duckdb connection "master"
+[0m22:15:30.450856 [debug] [MainThread]: On master: COMMIT
+[0m22:15:30.451515 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m22:15:30.451940 [debug] [MainThread]: On master: Close
+[0m22:15:30.452422 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m22:15:30.452751 [debug] [MainThread]: Connection 'create_project_data_main_serving' was properly closed.
+[0m22:15:30.453071 [debug] [MainThread]: Connection 'create_project_data_main_staging' was properly closed.
+[0m22:15:30.453378 [debug] [MainThread]: Connection 'create_project_data_main_intermediate' was properly closed.
+[0m22:15:30.453641 [debug] [MainThread]: Connection 'list_project_data_main_serving' was properly closed.
+[0m22:15:30.453921 [debug] [MainThread]: Connection 'list_project_data_main_staging' was properly closed.
+[0m22:15:30.454185 [debug] [MainThread]: Connection 'list_project_data_main_intermediate' was properly closed.
+[0m22:15:30.454452 [debug] [MainThread]: Connection 'model.projeto_educacao.srv_hipotese_gestor_esforco_rj' was properly closed.
+[0m22:15:30.454711 [debug] [MainThread]: Connection 'model.projeto_educacao.stg_ied_escolas' was properly closed.
+[0m22:15:30.454968 [debug] [MainThread]: Connection 'model.projeto_educacao.int_gestor_qualificacao' was properly closed.
+[0m22:15:30.455223 [debug] [MainThread]: Connection 'model.projeto_educacao.int_professor_esforco_rj' was properly closed.
+[0m22:15:30.455641 [info ] [MainThread]: 
+[0m22:15:30.456052 [info ] [MainThread]: Finished running 1 table model, 4 view models in 0 hours 0 minutes and 0.55 seconds (0.55s).
+[0m22:15:30.457509 [debug] [MainThread]: Command end result
+[0m22:15:30.492421 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\Rodrigo\Desktop\quizz\pratica_dbt_duckdb\project\target\manifest.json
+[0m22:15:30.495641 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\Rodrigo\Desktop\quizz\pratica_dbt_duckdb\project\target\semantic_manifest.json
+[0m22:15:30.503092 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\Rodrigo\Desktop\quizz\pratica_dbt_duckdb\project\target\run_results.json
+[0m22:15:30.503576 [info ] [MainThread]: 
+[0m22:15:30.504071 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m22:15:30.504460 [info ] [MainThread]: 
+[0m22:15:30.504835 [info ] [MainThread]: Done. PASS=5 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=5
+[0m22:15:30.506185 [debug] [MainThread]: Command `dbt run` succeeded at 22:15:30.506048 after 2.38 seconds
+[0m22:15:30.506601 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000201A803BF50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000201A9F7FDD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000201A9F7F890>]}
+[0m22:15:30.506976 [debug] [MainThread]: Flushing usage events
+[0m22:15:31.572709 [debug] [MainThread]: An error was encountered while trying to flush usage events

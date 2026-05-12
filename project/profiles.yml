@@ -1,0 +1,9 @@
+projeto_educacao:
+  target: dev
+
+  outputs:
+    dev:
+      type: duckdb
+      path: 'project_data.duckdb'
+      schema: main
+      threads: 4
