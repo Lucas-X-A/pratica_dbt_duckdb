@@ -7,3 +7,5 @@ logs/*
 
 project/target
 project/logs
+
+.user.yml
