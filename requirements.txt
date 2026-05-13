@@ -1,5 +1,7 @@
-dbt-core
-dbt-duckdb
+dbt-core==1.10.*
+dbt-duckdb==1.10.*
 duckdb
 pandas
 plotly
+dlt
+pyarrow
