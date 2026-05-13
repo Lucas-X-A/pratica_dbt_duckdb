@@ -21,3 +21,8 @@ Se for possível trazer o notebook pra mostrar o processo se não adicionar tudo
 Não é necessário slide, organize tudo em um Notebook para apresentar e os modelos commitados no GitHub.
 
 Tempo de apresentação: 5 minutos (a preferência é que outros alunos do grupo apresentem os resultados.)
+
+# HIPÓTESE DA PESQUISA:
+A qualificação acadêmica e a forma de ingresso do gestor impactam
+diretamente no índice de esforço e sobrecarga dos docentes no RJ?
+
