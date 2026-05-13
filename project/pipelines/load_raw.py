@@ -1,4 +1,4 @@
-import dlt
+import dlt as dlt
 import pandas as pd
 from pathlib import Path
 
