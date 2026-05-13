@@ -2,3 +2,5 @@
 data/prep.ipynb
 logs/*
 *.duckdb
+
+.venv
