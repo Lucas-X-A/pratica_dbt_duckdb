@@ -1,0 +1,17 @@
+version: 2
+
+models:
+  - name: srv_hipotese_gestor_esforco_rj
+    description: "Tabela final de análise que une a qualificação da gestão com o esforço docente para testar a hipótese do projeto."
+    columns:
+      - name: co_entidade
+        description: "Código INEP da escola."
+        tests:
+          - unique
+          - not_null
+      - name: indice_esforco_docente
+        description: "Média do esforço docente da unidade."
+      - name: score_qualificacao_gestor
+        description: "Índice de qualificação do gestor da unidade."
+      - name: categoria_gestao
+        description: "Segmentação da gestão para análise de grupos."

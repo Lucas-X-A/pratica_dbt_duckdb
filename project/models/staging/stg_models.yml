@@ -1,0 +1,26 @@
+version: 2
+
+models:
+  - name: stg_gestor_escolar
+    description: "Camada de staging para os dados de gestores escolares, realizando a limpeza inicial e seleção de colunas."
+    columns:
+      - name: co_entidade
+        description: "Código INEP da escola."
+        tests:
+          - not_null
+      - name: no_entidade
+        description: "Nome da instituição de ensino."
+      - name: ds_escolaridade
+        description: "Nível de escolaridade do gestor."
+      - name: ds_forma_acesso_cargo
+        description: "Meio pelo qual o gestor assumiu o cargo (Ex: Concurso, Indicação)."
+
+  - name: stg_ied_escolas
+    description: "Camada de staging para o Índice de Esforço Docente (IED) das escolas."
+    columns:
+      - name: co_entidade
+        description: "Código INEP da escola."
+        tests:
+          - not_null
+      - name: ds_media_ied
+        description: "Valor original do IED vindo da base bruta (formato texto)."

@@ -1,0 +1,23 @@
+version: 2
+
+models:
+  - name: int_gestor_qualificacao
+    description: "Transformação que calcula o score de qualificação do gestor com base na escolaridade e acesso ao cargo."
+    columns:
+      - name: co_entidade
+        description: "Código INEP da escola."
+        tests:
+          - unique
+          - not_null
+      - name: score_qualificacao_gestor
+        description: "Pontuação numérica baseada em critérios de qualificação."
+      - name: categoria_gestao
+        description: "Classificação qualitativa da gestão (ex: Elite, Profissional, Básica)."
+
+  - name: int_professor_esforco_rj
+    description: "Filtra os dados de esforço docente para o estado do Rio de Janeiro e limpa o índice IED."
+    columns:
+      - name: co_entidade
+        description: "Código INEP da escola."
+      - name: indice_esforco_docente
+        description: "Valor numérico do IED (1 a 6)."
